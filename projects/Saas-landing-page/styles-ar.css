@@ -1,0 +1,206 @@
+/* =============================================================
+   CloudPilot Arabic RTL — styles-ar.css
+   Imports the base stylesheet then applies full RTL overrides.
+   Both files must be in the same directory.
+   ============================================================= */
+
+@import url('./styles.css');
+
+/* =============================================================
+   1. RTL Core Direction
+   ============================================================= */
+html {
+  direction: rtl;
+}
+
+/* =============================================================
+   2. Arabic Font (Cairo) — override Inter
+   ============================================================= */
+:root {
+  --font-sans: 'Cairo', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.75;
+}
+
+/* =============================================================
+   3. Typography — reset letter-spacing for Arabic
+   Arabic script looks wrong with negative letter-spacing.
+   ============================================================= */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: normal;
+}
+
+.btn,
+.nav__link,
+.nav__logo-text,
+.section__tag,
+.hero__badge,
+.feature-card__link,
+.pricing-card__name,
+.db-stat__label,
+.db-activity__event,
+.footer__links-title {
+  letter-spacing: normal;
+}
+
+.section__tag,
+.footer__links-title,
+.db-stat__label,
+.db-table__table th {
+  text-transform: none;
+}
+
+/* =============================================================
+   4. Navigation — fix flex axis for RTL
+   In RTL flex, margin-right: auto pushes items to the left
+   (away from the logo on the right), creating the correct gap.
+   ============================================================= */
+.nav__links {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav__actions {
+  margin-left: 0;
+  margin-right: var(--space-4);
+}
+
+/* Mobile: hamburger already pushed left by margin-left:auto in RTL flex ✓ */
+
+/* =============================================================
+   5. Hero — avatar stack overlap flips in RTL
+   ============================================================= */
+.hero__avatar {
+  margin-left: 0;
+  margin-right: -8px;
+}
+
+.hero__avatar:first-child {
+  margin-right: 0;
+}
+
+/* =============================================================
+   6. Hero — floating cards mirror for RTL visual balance
+   In RTL the mockup is on the LEFT, so card positions flip.
+   ============================================================= */
+.float-card--1 {
+  right: auto;
+  left: -20px;
+}
+
+.float-card--2 {
+  left: auto;
+  right: -30px;
+}
+
+.float-card--3 {
+  right: auto;
+  left: 30px;
+}
+
+/* =============================================================
+   7. Section alignment — "left" classes mean "right" in RTL
+   ============================================================= */
+.section__title--left {
+  text-align: right;
+}
+
+.section__subtitle--left {
+  text-align: right;
+}
+
+/* =============================================================
+   8. Benefits — hover slides toward left (RTL reading start)
+   ============================================================= */
+.benefit:hover {
+  transform: translateX(-4px);
+}
+
+/* =============================================================
+   9. Feature card top-bar accent (spans full width, no change)
+   Keeping for clarity — left:0 right:0 works in RTL ✓
+   ============================================================= */
+
+/* =============================================================
+   10. Dashboard — sidebar is first flex child, appears on
+   the RIGHT in RTL flex automatically. No override needed.
+   The table and activity items also handle RTL via direction.
+   =============================================================
+   Add subtle RTL-specific dashboard refinements:
+   ============================================================= */
+
+/* Topbar date sits under the page title naturally in RTL ✓ */
+.dashboard__page-title {
+  letter-spacing: normal;
+}
+
+/* Table header text remains left-aligned for readability of
+   mixed Arabic/English table data */
+.db-table__table th,
+.db-table__table td {
+  text-align: right;
+}
+
+/* =============================================================
+   11. FAQ — icon order: in RTL flex with space-between,
+   the text is naturally on the right, icon on the left ✓
+   No changes needed. Confirming the answer padding is symmetric.
+   ============================================================= */
+.faq__answer p {
+  padding-right: var(--space-6);
+  padding-left: var(--space-6);
+}
+
+/* =============================================================
+   12. Pricing toggle — RTL flex naturally shows:
+   "شهري" on RIGHT (first item) | switch | "سنوي" on LEFT ✓
+   ============================================================= */
+
+/* =============================================================
+   13. Steps — in RTL flex the steps flow right→left:
+   Step 01 (right) → connector → Step 02 → connector → Step 03 (left)
+   This is correct Arabic reading order (right to left). ✓
+   ============================================================= */
+
+/* =============================================================
+   14. Footer brand description — constrain width for RTL
+   ============================================================= */
+.footer__brand-desc {
+  max-width: 300px;
+}
+
+/* =============================================================
+   15. Mobile nav panel — slides from top, full-width ✓
+   Internally uses RTL text direction automatically.
+   ============================================================= */
+
+/* =============================================================
+   16. Scroll animation — translateY (vertical), no RTL change ✓
+   ============================================================= */
+
+/* =============================================================
+   17. Responsive RTL refinements
+   ============================================================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  /* Hero visual appears on top (order: -1) — same in RTL ✓ */
+  .float-card--1,
+  .float-card--2,
+  .float-card--3 {
+    display: none; /* hide floats on smaller screens regardless */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Dashboard sidebar in mobile: RTL flex row — brand on RIGHT,
+     nav items to its left. Fine for mobile navigation. */
+
+  /* Footer bottom stacks vertically in mobile ✓ */
+
+  /* Hero actions stack and fill width ✓ */
+}

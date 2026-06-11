@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CloudPilot — Run your business from one smart dashboard. Manage customers, tasks, invoices, and team workflow effortlessly." />
+  <title>CloudPilot — All-in-One Business Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2L24 8V20L14 26L4 20V8L14 2Z" fill="url(#logoGrad)" />
+            <path d="M14 8L19 11V17L14 20L9 17V11L14 8Z" fill="white" opacity="0.9"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="4" y1="2" x2="24" y2="26" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/>
+                <stop offset="1" stop-color="#38BDF8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="nav__logo-text">CloudPilot</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#how-it-works" class="nav__link">How it Works</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#" class="btn btn--ghost">Log In</a>
+        <a href="#" class="btn btn--primary">Start Free Trial</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content fade-in">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            All-in-one SaaS dashboard
+          </div>
+          <h1 class="hero__headline">
+            Run your business from one <span class="hero__headline-accent">smart dashboard</span>
+          </h1>
+          <p class="hero__subheadline">
+            CloudPilot helps teams manage customers, tasks, invoices, and daily operations without switching between multiple tools.
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary btn--lg">
+              Start Free Trial
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#dashboard-preview" class="btn btn--outline btn--lg">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 5.5L11 8L6 10.5V5.5Z" fill="currentColor"/></svg>
+              View Demo
+            </a>
+          </div>
+          <div class="hero__social-proof">
+            <div class="hero__avatars">
+              <img src="https://i.pravatar.cc/32?img=1" alt="User" class="hero__avatar" />
+              <img src="https://i.pravatar.cc/32?img=2" alt="User" class="hero__avatar" />
+              <img src="https://i.pravatar.cc/32?img=3" alt="User" class="hero__avatar" />
+              <img src="https://i.pravatar.cc/32?img=4" alt="User" class="hero__avatar" />
+            </div>
+            <p class="hero__social-text"><strong>2,400+</strong> teams already onboard</p>
+          </div>
+        </div>
+
+        <div class="hero__visual fade-in fade-in--delay">
+          <div class="hero__mockup">
+            <!-- Dashboard Mock -->
+            <div class="mockup">
+              <div class="mockup__bar">
+                <span class="mockup__dot mockup__dot--red"></span>
+                <span class="mockup__dot mockup__dot--yellow"></span>
+                <span class="mockup__dot mockup__dot--green"></span>
+                <span class="mockup__url">app.cloudpilot.io/dashboard</span>
+              </div>
+              <div class="mockup__content">
+                <div class="mockup__sidebar">
+                  <div class="mockup__sidebar-logo"></div>
+                  <div class="mockup__nav-item mockup__nav-item--active"></div>
+                  <div class="mockup__nav-item"></div>
+                  <div class="mockup__nav-item"></div>
+                  <div class="mockup__nav-item"></div>
+                  <div class="mockup__nav-item"></div>
+                </div>
+                <div class="mockup__main">
+                  <div class="mockup__header">
+                    <div class="mockup__title-bar"></div>
+                    <div class="mockup__search"></div>
+                  </div>
+                  <div class="mockup__stats">
+                    <div class="mockup__stat mockup__stat--1">
+                      <div class="mockup__stat-icon"></div>
+                      <div class="mockup__stat-lines">
+                        <div class="mockup__stat-line mockup__stat-line--sm"></div>
+                        <div class="mockup__stat-line mockup__stat-line--lg"></div>
+                      </div>
+                    </div>
+                    <div class="mockup__stat mockup__stat--2">
+                      <div class="mockup__stat-icon"></div>
+                      <div class="mockup__stat-lines">
+                        <div class="mockup__stat-line mockup__stat-line--sm"></div>
+                        <div class="mockup__stat-line mockup__stat-line--lg"></div>
+                      </div>
+                    </div>
+                    <div class="mockup__stat mockup__stat--3">
+                      <div class="mockup__stat-icon"></div>
+                      <div class="mockup__stat-lines">
+                        <div class="mockup__stat-line mockup__stat-line--sm"></div>
+                        <div class="mockup__stat-line mockup__stat-line--lg"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mockup__chart">
+                    <div class="mockup__chart-bars">
+                      <div class="mockup__chart-bar" style="height:40%"></div>
+                      <div class="mockup__chart-bar" style="height:65%"></div>
+                      <div class="mockup__chart-bar" style="height:50%"></div>
+                      <div class="mockup__chart-bar" style="height:80%"></div>
+                      <div class="mockup__chart-bar" style="height:60%"></div>
+                      <div class="mockup__chart-bar mockup__chart-bar--active" style="height:90%"></div>
+                      <div class="mockup__chart-bar" style="height:70%"></div>
+                    </div>
+                  </div>
+                  <div class="mockup__rows">
+                    <div class="mockup__row"></div>
+                    <div class="mockup__row"></div>
+                    <div class="mockup__row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Cards -->
+            <div class="float-card float-card--1">
+              <div class="float-card__icon">⚡</div>
+              <div class="float-card__text">
+                <strong>24% faster</strong>
+                <span>workflow</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card--2">
+              <div class="float-card__icon">💰</div>
+              <div class="float-card__text">
+                <strong>12 invoices</strong>
+                <span>paid today</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card--3">
+              <div class="float-card__icon">🎯</div>
+              <div class="float-card__text">
+                <strong>New lead</strong>
+                <span>captured</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUSTED BY ===== -->
+    <section class="trusted" id="trusted">
+      <div class="container">
+        <p class="trusted__label">Trusted by teams at</p>
+        <div class="trusted__logos">
+          <div class="trusted__logo">
+            <svg width="110" height="28" viewBox="0 0 110 28" fill="none">
+              <rect x="0" y="8" width="20" height="12" rx="3" fill="#4F46E5" opacity="0.15"/>
+              <rect x="5" y="11" width="10" height="6" rx="1.5" fill="#4F46E5" opacity="0.6"/>
+              <text x="28" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#64748B">NovaTech</text>
+            </svg>
+          </div>
+          <div class="trusted__logo">
+            <svg width="110" height="28" viewBox="0 0 110 28" fill="none">
+              <circle cx="12" cy="14" r="8" fill="#38BDF8" opacity="0.2"/>
+              <circle cx="12" cy="14" r="5" fill="#38BDF8" opacity="0.6"/>
+              <text x="28" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#64748B">BrightLabs</text>
+            </svg>
+          </div>
+          <div class="trusted__logo">
+            <svg width="100" height="28" viewBox="0 0 100 28" fill="none">
+              <path d="M4 14 L12 6 L20 14 L12 22 Z" fill="#10B981" opacity="0.2"/>
+              <path d="M7 14 L12 9 L17 14 L12 19 Z" fill="#10B981" opacity="0.6"/>
+              <text x="28" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#64748B">FlowDesk</text>
+            </svg>
+          </div>
+          <div class="trusted__logo">
+            <svg width="110" height="28" viewBox="0 0 110 28" fill="none">
+              <rect x="2" y="6" width="22" height="16" rx="4" fill="#8B5CF6" opacity="0.15"/>
+              <rect x="7" y="11" width="12" height="6" rx="2" fill="#8B5CF6" opacity="0.6"/>
+              <text x="32" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#64748B">OrbitCRM</text>
+            </svg>
+          </div>
+          <div class="trusted__logo">
+            <svg width="100" height="28" viewBox="0 0 100 28" fill="none">
+              <path d="M12 4 L20 8 L20 16 L12 20 L4 16 L4 8 Z" fill="#F59E0B" opacity="0.2"/>
+              <path d="M12 8 L16 10 L16 16 L12 18 L8 16 L8 10 Z" fill="#F59E0B" opacity="0.6"/>
+              <text x="28" y="20" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#64748B">QuickHub</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Features</span>
+          <h2 class="section__title">Everything your business needs<br/>in one place</h2>
+          <p class="section__subtitle">Stop juggling between apps. CloudPilot brings all your essential business tools into a single, intuitive platform.</p>
+        </div>
+        <div class="features__grid">
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2"/><path d="M3 21C3 17.134 7.02944 14 12 14C16.9706 14 21 17.134 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Customer Management</h3>
+            <p class="feature-card__desc">Centralize all your customer data, interactions, and history in a smart, searchable CRM that keeps your team in sync.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--sky">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 2V6M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Task Tracking</h3>
+            <p class="feature-card__desc">Create, assign, and monitor tasks with deadlines, priorities, and progress tracking across your entire team.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 5.55228 9.44772 6 10 6H14C14.5523 6 15 5.55228 15 5M9 5C9 4.44772 9.44772 4 10 4H14C14.5523 4 15 4.44772 15 5" stroke="currentColor" stroke-width="2"/><path d="M9 12H12M9 16H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Invoice Automation</h3>
+            <p class="feature-card__desc">Generate, send, and track invoices automatically. Get paid faster with built-in payment reminders and status tracking.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--violet">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21V19C22.9986 18.1137 22.7053 17.2528 22.1614 16.5523C21.6175 15.8519 20.8548 15.3516 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0059 6.11683 19.0059 7.005C19.0059 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Team Collaboration</h3>
+            <p class="feature-card__desc">Work together seamlessly with shared workspaces, real-time updates, and team communication built right in.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20V14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Analytics Dashboard</h3>
+            <p class="feature-card__desc">Gain real-time insights into revenue, performance, and growth with beautiful charts and customizable reports.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-card__icon feature-card__icon--rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 11V7C7 4.79086 8.79086 3 11 3H13C15.2091 3 17 4.79086 17 7V11" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></svg>
+            </div>
+            <h3 class="feature-card__title">Secure Cloud Access</h3>
+            <p class="feature-card__desc">Enterprise-grade security with end-to-end encryption, role-based permissions, and 99.9% uptime guarantee.</p>
+            <a href="#" class="feature-card__link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Process</span>
+          <h2 class="section__title">Get started in three simple steps</h2>
+          <p class="section__subtitle">From sign-up to fully operational in under 10 minutes. No complex setup, no technical knowledge required.</p>
+        </div>
+        <div class="steps">
+          <div class="step fade-in">
+            <div class="step__number">01</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="6" fill="url(#stepGrad1)"/><path d="M11 16H21M11 12H18M11 20H16" stroke="white" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="stepGrad1" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="step__title">Create your workspace</h3>
+            <p class="step__desc">Sign up in seconds and set up your personalized CloudPilot workspace with your company name, logo, and team preferences.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true">
+            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M0 10 Q15 2 30 10 Q45 18 60 10" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="5 3" fill="none"/></svg>
+          </div>
+          <div class="step fade-in">
+            <div class="step__number">02</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="6" fill="url(#stepGrad2)"/><path d="M20 22V20C20 18.9 19.1 18 18 18H14C12.9 18 12 18.9 12 20V22" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="13" r="3" stroke="white" stroke-width="2"/><path d="M23 14L25 16L23 18" stroke="white" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="stepGrad2" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#38BDF8"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="step__title">Invite your team</h3>
+            <p class="step__desc">Add team members with a single click, assign roles and permissions, and start collaborating immediately with no configuration needed.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true">
+            <svg width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M0 10 Q15 2 30 10 Q45 18 60 10" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="5 3" fill="none"/></svg>
+          </div>
+          <div class="step fade-in">
+            <div class="step__number">03</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="6" fill="url(#stepGrad3)"/><path d="M10 22V18M16 22V14M22 22V10" stroke="white" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="stepGrad3" x1="4" y1="4" x2="28" y2="28"><stop stop-color="#10B981"/><stop offset="1" stop-color="#059669"/></linearGradient></defs></svg>
+            </div>
+            <h3 class="step__title">Manage smarter</h3>
+            <p class="step__desc">Track customers, tasks, invoices, and performance from one beautiful dashboard. Make data-driven decisions and grow faster.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DASHBOARD PREVIEW ===== -->
+    <section class="dashboard-section section" id="dashboard-preview">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Live Preview</span>
+          <h2 class="section__title">Your command center awaits</h2>
+          <p class="section__subtitle">Every metric, every task, every customer — all visible at a glance from your CloudPilot dashboard.</p>
+        </div>
+        <div class="dashboard fade-in">
+          <div class="dashboard__sidebar">
+            <div class="dashboard__brand">
+              <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 2L24 8V20L14 26L4 20V8L14 2Z" fill="url(#dbLogoGrad)"/><path d="M14 8L19 11V17L14 20L9 17V11L14 8Z" fill="white" opacity="0.9"/><defs><linearGradient id="dbLogoGrad" x1="4" y1="2" x2="24" y2="26"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs></svg>
+              <span>CloudPilot</span>
+            </div>
+            <nav class="dashboard__nav">
+              <a href="#" class="dashboard__nav-item dashboard__nav-item--active">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1.5" fill="currentColor"/><rect x="9" y="1" width="6" height="6" rx="1.5" fill="currentColor" opacity="0.5"/><rect x="1" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity="0.5"/><rect x="9" y="9" width="6" height="6" rx="1.5" fill="currentColor" opacity="0.5"/></svg>
+                Dashboard
+              </a>
+              <a href="#" class="dashboard__nav-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.667 5.333C10.667 7.174 9.174 8.667 7.333 8.667C5.492 8.667 4 7.174 4 5.333C4 3.492 5.492 2 7.333 2C9.174 2 10.667 3.492 10.667 5.333Z" stroke="currentColor" stroke-width="1.3"/><path d="M2 14C2 11.791 4.463 10 7.333 10C10.203 10 12.667 11.791 12.667 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Customers
+              </a>
+              <a href="#" class="dashboard__nav-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M6 8L7.333 9.333L10 6.667" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                Tasks
+              </a>
+              <a href="#" class="dashboard__nav-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3H4C3.448 3 3 3.448 3 4V13C3 13.552 3.448 14 4 14H12C12.552 14 13 13.552 13 13V4C13 3.448 12.552 3 12 3H10M6 3C6 3.368 6.299 3.667 6.667 3.667H9.333C9.701 3.667 10 3.368 10 3M6 3C6 2.632 6.299 2.333 6.667 2.333H9.333C9.701 2.333 10 2.632 10 3" stroke="currentColor" stroke-width="1.3"/></svg>
+                Invoices
+              </a>
+              <a href="#" class="dashboard__nav-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7 10.667V7.333M10.667 10.667V5.333M13.333 10.667V3.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Analytics
+              </a>
+              <a href="#" class="dashboard__nav-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.3"/><path d="M8 5V9M8 11H8.007" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Settings
+              </a>
+            </nav>
+            <div class="dashboard__sidebar-footer">
+              <img src="https://i.pravatar.cc/32?img=5" alt="User" class="dashboard__avatar" />
+              <div class="dashboard__user-info">
+                <span class="dashboard__user-name">Alex Morgan</span>
+                <span class="dashboard__user-role">Admin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__body">
+            <div class="dashboard__topbar">
+              <div class="dashboard__topbar-left">
+                <h2 class="dashboard__page-title">Dashboard</h2>
+                <span class="dashboard__date">Tuesday, June 10, 2026</span>
+              </div>
+              <div class="dashboard__topbar-right">
+                <div class="dashboard__search-bar">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="#94A3B8" stroke-width="1.3"/><path d="M9.5 9.5L12 12" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round"/></svg>
+                  Search...
+                </div>
+                <button class="dashboard__notif-btn">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2C8 2 5 3 5 7V11H11V7C11 3 8 2 8 2Z" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 11V12C6.5 12.828 7.172 13.5 8 13.5C8.828 13.5 9.5 12.828 9.5 12V11" stroke="currentColor" stroke-width="1.3"/><circle cx="11" cy="4" r="2.5" fill="#EF4444"/></svg>
+                </button>
+                <img src="https://i.pravatar.cc/32?img=5" alt="User" class="dashboard__topbar-avatar" />
+              </div>
+            </div>
+
+            <div class="dashboard__content">
+              <!-- Stats Row -->
+              <div class="db-stats">
+                <div class="db-stat db-stat--indigo">
+                  <div class="db-stat__header">
+                    <span class="db-stat__label">Total Revenue</span>
+                    <div class="db-stat__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2V14M11 5H6.5C5.672 5 5 5.672 5 6.5C5 7.328 5.672 8 6.5 8H9.5C10.328 8 11 8.672 11 9.5C11 10.328 10.328 11 9.5 11H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="db-stat__value">$48,290</div>
+                  <div class="db-stat__change db-stat__change--up">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2L10 6H7V10H5V6H2L6 2Z" fill="currentColor"/></svg>
+                    +12.4% from last month
+                  </div>
+                </div>
+                <div class="db-stat db-stat--sky">
+                  <div class="db-stat__header">
+                    <span class="db-stat__label">Active Customers</span>
+                    <div class="db-stat__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.667 5.333C10.667 7.174 9.174 8.667 7.333 8.667C5.492 8.667 4 7.174 4 5.333C4 3.492 5.492 2 7.333 2C9.174 2 10.667 3.492 10.667 5.333Z" stroke="currentColor" stroke-width="1.3"/><path d="M2 14C2 11.791 4.463 10 7.333 10C10.203 10 12.667 11.791 12.667 14" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="db-stat__value">1,248</div>
+                  <div class="db-stat__change db-stat__change--up">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2L10 6H7V10H5V6H2L6 2Z" fill="currentColor"/></svg>
+                    +8.1% from last month
+                  </div>
+                </div>
+                <div class="db-stat db-stat--emerald">
+                  <div class="db-stat__header">
+                    <span class="db-stat__label">Tasks Completed</span>
+                    <div class="db-stat__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8L6.667 10.667L12 5.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="db-stat__value">342</div>
+                  <div class="db-stat__change db-stat__change--up">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2L10 6H7V10H5V6H2L6 2Z" fill="currentColor"/></svg>
+                    +24% this week
+                  </div>
+                </div>
+                <div class="db-stat db-stat--amber">
+                  <div class="db-stat__header">
+                    <span class="db-stat__label">Open Invoices</span>
+                    <div class="db-stat__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3H4C3.448 3 3 3.448 3 4V13C3 13.552 3.448 14 4 14H12C12.552 14 13 13.552 13 13V4C13 3.448 12.552 3 12 3H10" stroke="currentColor" stroke-width="1.3"/><path d="M6 8H10M6 11H9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="db-stat__value">18</div>
+                  <div class="db-stat__change db-stat__change--down">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="transform:rotate(180deg)"><path d="M6 2L10 6H7V10H5V6H2L6 2Z" fill="currentColor"/></svg>
+                    -3 from yesterday
+                  </div>
+                </div>
+              </div>
+
+              <div class="dashboard__lower">
+                <!-- Chart -->
+                <div class="db-chart">
+                  <div class="db-chart__header">
+                    <h3 class="db-chart__title">Revenue Overview</h3>
+                    <div class="db-chart__period">
+                      <button class="db-chart__period-btn">Week</button>
+                      <button class="db-chart__period-btn db-chart__period-btn--active">Month</button>
+                      <button class="db-chart__period-btn">Year</button>
+                    </div>
+                  </div>
+                  <div class="db-chart__area">
+                    <svg class="db-chart__svg" viewBox="0 0 500 160" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.25"/>
+                          <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,120 C40,110 60,90 100,80 C140,70 160,100 200,85 C240,70 260,40 300,35 C340,30 360,50 400,40 C440,30 460,20 500,15 L500,160 L0,160 Z" fill="url(#chartGrad)"/>
+                      <path d="M0,120 C40,110 60,90 100,80 C140,70 160,100 200,85 C240,70 260,40 300,35 C340,30 360,50 400,40 C440,30 460,20 500,15" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round"/>
+                      <circle cx="300" cy="35" r="5" fill="#4F46E5"/>
+                      <circle cx="300" cy="35" r="9" fill="#4F46E5" opacity="0.2"/>
+                    </svg>
+                    <div class="db-chart__labels">
+                      <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="db-activity">
+                  <div class="db-activity__header">
+                    <h3 class="db-activity__title">Recent Activity</h3>
+                    <a href="#" class="db-activity__view-all">View all</a>
+                  </div>
+                  <ul class="db-activity__list">
+                    <li class="db-activity__item">
+                      <div class="db-activity__dot db-activity__dot--green"></div>
+                      <div class="db-activity__info">
+                        <span class="db-activity__event">Invoice #INV-2084 paid</span>
+                        <span class="db-activity__time">2 min ago</span>
+                      </div>
+                      <span class="db-activity__amount db-activity__amount--green">+$1,200</span>
+                    </li>
+                    <li class="db-activity__item">
+                      <div class="db-activity__dot db-activity__dot--blue"></div>
+                      <div class="db-activity__info">
+                        <span class="db-activity__event">New customer: Sarah K.</span>
+                        <span class="db-activity__time">14 min ago</span>
+                      </div>
+                    </li>
+                    <li class="db-activity__item">
+                      <div class="db-activity__dot db-activity__dot--purple"></div>
+                      <div class="db-activity__info">
+                        <span class="db-activity__event">Task "Q3 Report" completed</span>
+                        <span class="db-activity__time">1 hr ago</span>
+                      </div>
+                    </li>
+                    <li class="db-activity__item">
+                      <div class="db-activity__dot db-activity__dot--amber"></div>
+                      <div class="db-activity__info">
+                        <span class="db-activity__event">Invoice #INV-2081 overdue</span>
+                        <span class="db-activity__time">3 hr ago</span>
+                      </div>
+                      <span class="db-activity__amount db-activity__amount--red">$850</span>
+                    </li>
+                    <li class="db-activity__item">
+                      <div class="db-activity__dot db-activity__dot--green"></div>
+                      <div class="db-activity__info">
+                        <span class="db-activity__event">Team member James joined</span>
+                        <span class="db-activity__time">5 hr ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Table Preview -->
+              <div class="db-table">
+                <div class="db-table__header">
+                  <h3 class="db-table__title">Recent Customers</h3>
+                  <button class="db-table__btn">+ Add Customer</button>
+                </div>
+                <div class="db-table__wrapper">
+                  <table class="db-table__table">
+                    <thead>
+                      <tr>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Plan</th>
+                        <th>Revenue</th>
+                        <th>Last Active</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="db-table__customer">
+                            <img src="https://i.pravatar.cc/28?img=10" alt="Customer" />
+                            <div>
+                              <span class="db-table__name">Marcus Chen</span>
+                              <span class="db-table__email">marcus@novatech.io</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="db-table__badge db-table__badge--active">Active</span></td>
+                        <td>Pro</td>
+                        <td>$4,200</td>
+                        <td>Today</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="db-table__customer">
+                            <img src="https://i.pravatar.cc/28?img=20" alt="Customer" />
+                            <div>
+                              <span class="db-table__name">Priya Sharma</span>
+                              <span class="db-table__email">priya@brightlabs.co</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="db-table__badge db-table__badge--active">Active</span></td>
+                        <td>Business</td>
+                        <td>$9,800</td>
+                        <td>Yesterday</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="db-table__customer">
+                            <img src="https://i.pravatar.cc/28?img=30" alt="Customer" />
+                            <div>
+                              <span class="db-table__name">David Kim</span>
+                              <span class="db-table__email">david@flowdesk.app</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="db-table__badge db-table__badge--trial">Trial</span></td>
+                        <td>Starter</td>
+                        <td>$380</td>
+                        <td>2 days ago</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="db-table__customer">
+                            <img src="https://i.pravatar.cc/28?img=40" alt="Customer" />
+                            <div>
+                              <span class="db-table__name">Elena Russo</span>
+                              <span class="db-table__email">elena@orbitcrm.net</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="db-table__badge db-table__badge--inactive">Inactive</span></td>
+                        <td>Pro</td>
+                        <td>$2,100</td>
+                        <td>1 week ago</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section class="benefits section" id="benefits">
+      <div class="container">
+        <div class="benefits__container">
+          <div class="benefits__left fade-in">
+            <span class="section__tag">Why CloudPilot</span>
+            <h2 class="section__title section__title--left">Built to save time and reduce complexity</h2>
+            <p class="section__subtitle section__subtitle--left">We designed CloudPilot with one mission: eliminate the chaos of running a modern business, so you can focus on what actually matters — growth.</p>
+            <a href="#" class="btn btn--primary">See all features →</a>
+          </div>
+          <div class="benefits__right fade-in">
+            <div class="benefit">
+              <div class="benefit__icon benefit__icon--indigo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3V10L14 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div class="benefit__content">
+                <h4 class="benefit__title">Reduce manual work by 60%</h4>
+                <p class="benefit__desc">Automate repetitive tasks like invoice generation, follow-up emails, and status updates so your team focuses on high-value work.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__icon benefit__icon--sky">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 11C17 15.418 13.866 19 10 19C6.134 19 3 15.418 3 11C3 6.582 6.134 3 10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 2L17 5L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 5H11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div class="benefit__content">
+                <h4 class="benefit__title">Keep your team perfectly aligned</h4>
+                <p class="benefit__desc">Real-time updates, shared task boards, and team notifications ensure everyone is always on the same page, wherever they work.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__icon benefit__icon--emerald">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 13V17M10 9V17M15 5V17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="benefit__content">
+                <h4 class="benefit__title">Track business performance live</h4>
+                <p class="benefit__desc">Live dashboards with KPIs, revenue charts, and team metrics give you the clarity to make faster, smarter decisions.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__icon benefit__icon--violet">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 12C4 12 5 10 8 10C11 10 13 12 16 12C19 12 20 10 20 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 7C4 7 5 5 8 5C11 5 13 7 16 7C19 7 20 5 20 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div class="benefit__content">
+                <h4 class="benefit__title">Improve customer follow-up rate</h4>
+                <p class="benefit__desc">Smart reminders and customer activity tracking ensure no lead falls through the cracks, boosting your close rate significantly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Pricing</span>
+          <h2 class="section__title">Simple, transparent pricing</h2>
+          <p class="section__subtitle">No hidden fees. No surprise charges. Choose the plan that fits your team and upgrade anytime.</p>
+        </div>
+        <div class="pricing__toggle fade-in">
+          <span class="pricing__toggle-label pricing__toggle-label--active" id="toggleMonthly">Monthly</span>
+          <label class="pricing__switch">
+            <input type="checkbox" id="billingToggle" />
+            <span class="pricing__slider"></span>
+          </label>
+          <span class="pricing__toggle-label" id="toggleAnnual">Annual <span class="pricing__save-badge">Save 20%</span></span>
+        </div>
+        <div class="pricing__cards">
+          <div class="pricing-card fade-in">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Starter</h3>
+              <p class="pricing-card__desc">Perfect for solo founders and small teams just getting started.</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span class="pricing-card__amount" data-monthly="19" data-annual="15">19</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature pricing-card__feature--yes">Up to 3 team members</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">100 customers</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited tasks</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">20 invoices/month</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Basic analytics</li>
+              <li class="pricing-card__feature pricing-card__feature--no">Custom branding</li>
+              <li class="pricing-card__feature pricing-card__feature--no">Priority support</li>
+              <li class="pricing-card__feature pricing-card__feature--no">API access</li>
+            </ul>
+            <a href="#" class="btn btn--outline pricing-card__cta">Get Started Free</a>
+          </div>
+
+          <div class="pricing-card pricing-card--popular fade-in">
+            <div class="pricing-card__popular-badge">Most Popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Pro</h3>
+              <p class="pricing-card__desc">Ideal for growing businesses that need more power and flexibility.</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span class="pricing-card__amount" data-monthly="49" data-annual="39">49</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature pricing-card__feature--yes">Up to 15 team members</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited customers</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited tasks</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited invoices</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Advanced analytics</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Custom branding</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Priority support</li>
+              <li class="pricing-card__feature pricing-card__feature--no">API access</li>
+            </ul>
+            <a href="#" class="btn btn--primary pricing-card__cta">Start Free Trial</a>
+          </div>
+
+          <div class="pricing-card fade-in">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Business</h3>
+              <p class="pricing-card__desc">For established teams that need enterprise features and full control.</p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span class="pricing-card__amount" data-monthly="99" data-annual="79">99</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited team members</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited customers</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited everything</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited invoices</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Custom reports</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">White-label branding</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">24/7 dedicated support</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Full API access</li>
+            </ul>
+            <a href="#" class="btn btn--outline pricing-card__cta">Contact Sales</a>
+          </div>
+        </div>
+        <p class="pricing__note fade-in">All plans include a <strong>14-day free trial</strong>. No credit card required.</p>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Testimonials</span>
+          <h2 class="section__title">Loved by teams worldwide</h2>
+          <p class="section__subtitle">Don't just take our word for it — here's what our customers have to say about CloudPilot.</p>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testimonial fade-in">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__quote">
+              "CloudPilot completely transformed how we run our startup. We used to juggle five different tools — now everything is in one place. Our team is 3x more productive and we've cut our admin time in half."
+            </blockquote>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/48?img=11" alt="James Carter" class="testimonial__avatar" />
+              <div class="testimonial__author-info">
+                <strong class="testimonial__name">James Carter</strong>
+                <span class="testimonial__role">Founder & CEO, NovaTech</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial testimonial--featured fade-in">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__quote">
+              "As operations manager, I need visibility across every department. CloudPilot gives me that in real time. The analytics dashboard alone has saved me hours of manual reporting every single week."
+            </blockquote>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/48?img=25" alt="Sophie Williams" class="testimonial__avatar" />
+              <div class="testimonial__author-info">
+                <strong class="testimonial__name">Sophie Williams</strong>
+                <span class="testimonial__role">Operations Manager, BrightLabs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial fade-in">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__quote">
+              "I run a digital agency with 12 clients and 8 team members. Before CloudPilot, things fell through the cracks constantly. Now client follow-ups happen automatically and invoices get paid on time. Absolute game changer."
+            </blockquote>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/48?img=33" alt="Rafael Morales" class="testimonial__avatar" />
+              <div class="testimonial__author-info">
+                <strong class="testimonial__name">Rafael Morales</strong>
+                <span class="testimonial__role">Agency Owner, FlowDesk Creative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">FAQ</span>
+          <h2 class="section__title">Frequently asked questions</h2>
+          <p class="section__subtitle">Have a different question? <a href="#" class="faq__contact-link">Contact our support team</a> and we'll get back to you within 24 hours.</p>
+        </div>
+        <div class="faq__list fade-in">
+          <div class="faq__item">
+            <button class="faq__question">
+              Can I try CloudPilot before paying?
+              <span class="faq__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer">
+              <p>Absolutely! Every plan comes with a 14-day free trial with full access to all features. No credit card required to get started. You'll only be charged when you decide to subscribe after the trial period.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              How many team members can I add?
+              <span class="faq__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer">
+              <p>It depends on your plan. The Starter plan allows up to 3 team members, the Pro plan up to 15, and the Business plan has unlimited team members. You can always upgrade your plan if your team grows.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Can I import data from my existing tools?
+              <span class="faq__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes! CloudPilot supports CSV imports for customers and invoices, and offers direct integrations with popular tools like HubSpot, Salesforce, QuickBooks, and Zapier. Our onboarding team can help with data migration for Business plan customers.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Is my data secure and backed up?
+              <span class="faq__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer">
+              <p>Security is our top priority. All data is encrypted at rest and in transit using AES-256 and TLS 1.3. We perform automated daily backups with 30-day retention and maintain 99.9% uptime backed by our SLA. We are SOC 2 Type II certified.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">
+              Can I cancel my subscription anytime?
+              <span class="faq__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes, you can cancel your subscription at any time directly from your account settings — no phone calls or lengthy processes required. If you cancel, you'll retain access until the end of your current billing period and can export all your data at any time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="final-cta section">
+      <div class="container">
+        <div class="final-cta__card fade-in">
+          <div class="final-cta__bg-shapes" aria-hidden="true">
+            <div class="final-cta__shape final-cta__shape--1"></div>
+            <div class="final-cta__shape final-cta__shape--2"></div>
+          </div>
+          <div class="final-cta__content">
+            <h2 class="final-cta__headline">Ready to simplify the way<br/>your business works?</h2>
+            <p class="final-cta__sub">Join over 2,400 teams already using CloudPilot to save time, stay organized, and grow faster. Start your free trial today — no credit card needed.</p>
+            <div class="final-cta__actions">
+              <a href="#" class="btn btn--white btn--lg">Start Free Trial</a>
+              <a href="#" class="btn btn--outline-white btn--lg">Talk to Sales</a>
+            </div>
+            <p class="final-cta__guarantee">✓ Free 14-day trial &nbsp;&nbsp; ✓ No credit card required &nbsp;&nbsp; ✓ Cancel anytime</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo footer__logo">
+            <span class="nav__logo-icon">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><path d="M14 2L24 8V20L14 26L4 20V8L14 2Z" fill="url(#footerLogoGrad)"/><path d="M14 8L19 11V17L14 20L9 17V11L14 8Z" fill="white" opacity="0.9"/><defs><linearGradient id="footerLogoGrad" x1="4" y1="2" x2="24" y2="26"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs></svg>
+            </span>
+            <span class="nav__logo-text">CloudPilot</span>
+          </a>
+          <p class="footer__brand-desc">The all-in-one dashboard for modern businesses. Manage customers, tasks, invoices, and your team from one beautiful platform.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10V17M7 7V7.01M12 17V13C12 11.895 12.895 11 14 11C15.105 11 16 11.895 16 13V17M12 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="#features" class="footer__link">Features</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#dashboard-preview" class="footer__link">Dashboard</a></li>
+            <li><a href="#" class="footer__link">Changelog</a></li>
+            <li><a href="#" class="footer__link">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Press Kit</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links-group">
+          <h4 class="footer__links-title">Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Documentation</a></li>
+            <li><a href="#" class="footer__link">API Reference</a></li>
+            <li><a href="#" class="footer__link">Community</a></li>
+            <li><a href="#faq" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Status Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 CloudPilot, Inc. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+          <a href="#" class="footer__legal-link">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

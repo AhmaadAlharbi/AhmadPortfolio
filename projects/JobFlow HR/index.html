@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JobFlow HR is a modern recruitment platform for tracking candidates, coordinating interviews, and hiring stronger teams faster.">
+  <title>JobFlow HR | Hire Better Talent Faster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="JobFlow HR home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" role="img"><path d="M9 9.5h7v7H9zM20 9.5h7v7h-7zM9 20.5h7v7H9z"/><path class="brand__mark-accent" d="M20 20.5h7v7h-7z"/></svg>
+        </span>
+        <span>JobFlow <strong>HR</strong></span>
+      </a>
+
+      <nav class="header__nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#features">Features</a>
+        <a class="nav-link" href="#solutions">Solutions</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#resources">Resources</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--small ripple" href="#pricing">Start Free Trial</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="eyebrow"><span class="eyebrow__dot"></span> Modern Recruitment Platform</div>
+          <h1>Hire Better Talent <span>Faster.</span></h1>
+          <p class="hero__lead">Manage candidates, streamline hiring workflows, schedule interviews, and collaborate with your hiring team from one intelligent platform.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--large ripple" href="#pricing">Start Free Trial <span aria-hidden="true">→</span></a>
+            <button class="btn btn--secondary btn--large ripple" type="button" data-demo-button>
+              <span class="play-icon" aria-hidden="true">▶</span> Watch Demo
+            </button>
+          </div>
+          <div class="hero__proof">
+            <div class="avatar-stack" aria-label="Trusted by hiring teams">
+              <span>AM</span><span>RK</span><span>LS</span><span>+2k</span>
+            </div>
+            <div><div class="rating" aria-label="5 out of 5 stars">★★★★★</div><p>Trusted by 500+ hiring teams</p></div>
+          </div>
+        </div>
+
+        <div class="hero-product reveal reveal--delay" aria-label="JobFlow recruitment dashboard preview">
+          <div class="floating-card floating-card--applicants">
+            <span class="floating-card__icon floating-card__icon--green">↗</span>
+            <span><strong>+15 New Applicants</strong><small>In the last 24 hours</small></span>
+          </div>
+          <div class="floating-card floating-card--interview">
+            <span class="floating-card__icon floating-card__icon--orange">●</span>
+            <span><strong>Interview Scheduled</strong><small>Today at 2:30 PM</small></span>
+          </div>
+          <div class="floating-card floating-card--hired">
+            <span class="floating-card__icon floating-card__icon--green">✓</span>
+            <span><strong>Candidate Hired</strong><small>Product Designer</small></span>
+          </div>
+
+          <div class="mini-dashboard product-window">
+            <div class="window-bar">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>app.jobflowhr.com</span>
+              <div class="window-action">•••</div>
+            </div>
+            <div class="mini-dashboard__body">
+              <aside class="mini-sidebar">
+                <div class="mini-brand"><span class="brand__mark brand__mark--small"><svg viewBox="0 0 36 36"><path d="M9 9.5h7v7H9zM20 9.5h7v7h-7zM9 20.5h7v7H9z"/><path class="brand__mark-accent" d="M20 20.5h7v7h-7z"/></svg></span></div>
+                <span class="mini-side-link active"><i></i></span><span class="mini-side-link"><i></i></span><span class="mini-side-link"><i></i></span><span class="mini-side-link"><i></i></span><span class="mini-side-link"><i></i></span>
+                <div class="mini-user">JD</div>
+              </aside>
+              <div class="mini-main">
+                <div class="mini-topbar"><div><small>Welcome back, Olivia</small><strong>Recruitment Overview</strong></div><div class="mini-topbar__actions"><span>⌕</span><span>♧</span><b>OL</b></div></div>
+                <div class="metric-grid">
+                  <article class="metric-card"><span class="metric-icon metric-icon--green">▣</span><div><small>Open Positions</small><strong>24</strong><em>+8.2%</em></div></article>
+                  <article class="metric-card"><span class="metric-icon metric-icon--blue">♙</span><div><small>Candidates</small><strong>1,248</strong><em>+12.5%</em></div></article>
+                  <article class="metric-card"><span class="metric-icon metric-icon--orange">□</span><div><small>Interviews</small><strong>86</strong><em>+5.4%</em></div></article>
+                  <article class="metric-card"><span class="metric-icon metric-icon--purple">✓</span><div><small>Hires</small><strong>42</strong><em>+18.9%</em></div></article>
+                </div>
+                <div class="mini-content-grid">
+                  <article class="chart-card">
+                    <div class="card-heading"><div><strong>Hiring Overview</strong><small>Applications this month</small></div><span>Last 30 days⌄</span></div>
+                    <div class="chart-wrap">
+                      <div class="chart-y"><span>600</span><span>450</span><span>300</span><span>150</span><span>0</span></div>
+                      <svg class="area-chart" viewBox="0 0 500 190" preserveAspectRatio="none" aria-label="Applications trend chart">
+                        <defs><linearGradient id="heroChartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#16a34a" stop-opacity=".28"/><stop offset="1" stop-color="#16a34a" stop-opacity="0"/></linearGradient></defs>
+                        <path class="chart-grid" d="M0 20H500M0 62H500M0 104H500M0 146H500M0 188H500"/>
+                        <path class="chart-area" d="M0 164 C45 145 65 152 102 120 S165 130 202 94 S270 108 305 68 S370 90 410 48 S465 55 500 24 V190 H0Z" fill="url(#heroChartFill)"/>
+                        <path class="chart-line" d="M0 164 C45 145 65 152 102 120 S165 130 202 94 S270 108 305 68 S370 90 410 48 S465 55 500 24"/>
+                        <circle class="chart-dot" cx="305" cy="68" r="5"/><circle class="chart-dot" cx="410" cy="48" r="5"/>
+                      </svg>
+                    </div>
+                    <div class="chart-labels"><span>May 1</span><span>May 7</span><span>May 14</span><span>May 21</span><span>May 28</span></div>
+                  </article>
+                  <article class="pipeline-summary">
+                    <div class="card-heading"><div><strong>Pipeline</strong><small>Candidate stages</small></div><span>•••</span></div>
+                    <div class="donut-wrap"><div class="donut"><span><strong>1,248</strong><small>Total</small></span></div></div>
+                    <ul class="pipeline-legend"><li><i class="green"></i>Applied <b>58%</b></li><li><i class="orange"></i>Interview <b>27%</b></li><li><i class="navy"></i>Offer <b>15%</b></li></ul>
+                  </article>
+                </div>
+                <div class="mini-table-card">
+                  <div class="card-heading"><div><strong>Recent Candidates</strong><small>Latest applicants</small></div><a href="#pipeline">View all</a></div>
+                  <div class="mini-table-row mini-table-head"><span>Candidate</span><span>Role</span><span>Stage</span><span>Score</span></div>
+                  <div class="mini-table-row"><span><i class="candidate-avatar avatar--teal">EK</i><b>Emma Knight</b></span><span>Product Designer</span><span><em class="status status--interview">Interview</em></span><span>94</span></div>
+                  <div class="mini-table-row"><span><i class="candidate-avatar avatar--orange">DL</i><b>David Lee</b></span><span>Frontend Engineer</span><span><em class="status status--screening">Screening</em></span><span>88</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted section--compact" aria-label="Trusted companies">
+      <div class="container">
+        <p class="trusted__label">POWERING HIRING TEAMS AT FORWARD-THINKING COMPANIES</p>
+        <div class="logo-cloud">
+          <span><i class="logo-symbol logo-symbol--nova">N</i>NovaTech</span>
+          <span><i class="logo-symbol logo-symbol--vertex">V</i>Vertex Systems</span>
+          <span><i class="logo-symbol logo-symbol--talent">T</i>TalentCore</span>
+          <span><i class="logo-symbol logo-symbol--bright">B</i>BrightWorks</span>
+          <span><i class="logo-symbol logo-symbol--elevate">E</i>Elevate Group</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <div class="eyebrow">BUILT FOR MODERN HIRING</div>
+          <h2>Everything Your Hiring Team Needs</h2>
+          <p>From first application to final offer, bring every step of your recruitment process into one connected workspace.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M8 7V5a4 4 0 0 1 8 0v2M5 8h14a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a1 1 0 0 1 1-1Z"/><path d="M9 13h6M12 10v6"/></svg></div>
+            <h3>Applicant Tracking</h3><p>Organize every candidate, resume, and conversation in one searchable talent database.</p><a href="#dashboard">Learn more <span>→</span></a>
+          </article>
+          <article class="feature-card reveal reveal--delay-sm">
+            <div class="feature-icon feature-icon--blue"><svg viewBox="0 0 24 24"><path d="M4 5h4v14H4zM10 5h4v9h-4zM16 5h4v5h-4z"/><path d="m17 15 2 2 3-4"/></svg></div>
+            <h3>Candidate Pipeline</h3><p>Move top talent through customizable stages with an intuitive visual hiring pipeline.</p><a href="#pipeline">Learn more <span>→</span></a>
+          </article>
+          <article class="feature-card reveal reveal--delay-md">
+            <div class="feature-icon feature-icon--orange"><svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Z"/><path d="M7 2v4M17 2v4M3 9h18M8 13h3M8 16h7"/></svg></div>
+            <h3>Interview Scheduling</h3><p>Coordinate interviews faster with shared calendars, reminders, and self-scheduling.</p><a href="#dashboard">Learn more <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon feature-icon--purple"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M14 19a4 4 0 0 1 8 0"/><path d="M18 3v4M16 5h4"/></svg></div>
+            <h3>Team Collaboration</h3><p>Share scorecards, notes, and feedback so every hiring decision stays aligned and fair.</p><a href="#solutions">Learn more <span>→</span></a>
+          </article>
+          <article class="feature-card reveal reveal--delay-sm">
+            <div class="feature-icon feature-icon--pink"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/><path d="m4 7 6-5 6 7 6-5"/></svg></div>
+            <h3>Recruitment Analytics</h3><p>Track time-to-hire, source quality, conversion rates, and the metrics that improve outcomes.</p><a href="#dashboard">Learn more <span>→</span></a>
+          </article>
+          <article class="feature-card reveal reveal--delay-md">
+            <div class="feature-icon feature-icon--yellow"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <h3>Automated Workflows</h3><p>Automate repetitive tasks, status updates, emails, and approvals without losing the human touch.</p><a href="#solutions">Learn more <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pipeline-section section" id="pipeline">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div><div class="eyebrow">VISUAL HIRING PIPELINE</div><h2>See Every Candidate.<br>Move Hiring Forward.</h2></div>
+          <p>Get a clear view of your entire talent pipeline. Drag, drop, prioritize, and keep your team focused on the candidates that matter.</p>
+        </div>
+        <div class="kanban-window product-window reveal">
+          <div class="kanban-toolbar">
+            <div><h3>Senior Product Designer</h3><p>San Francisco, CA · Full-time · 48 candidates</p></div>
+            <div class="kanban-toolbar__actions"><button type="button">☷ Filter</button><button type="button">↕ Sort</button><button class="btn btn--primary btn--small ripple" type="button">+ Add candidate</button></div>
+          </div>
+          <div class="kanban-board">
+            <div class="kanban-column" data-stage="applied"><div class="kanban-column__head"><span><i class="stage-dot stage-dot--gray"></i>Applied <b>12</b></span><button>•••</button></div>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--blue">MC</span><button>•••</button></div><h4>Maya Chen</h4><p>Senior Product Designer</p><div class="candidate-tags"><span>Figma</span><span>Design Systems</span></div><div class="candidate-card__foot"><span>2h ago</span><span class="candidate-score">92</span></div></article>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--purple">JM</span><button>•••</button></div><h4>James Miller</h4><p>Product Designer</p><div class="candidate-tags"><span>UX Research</span><span>SaaS</span></div><div class="candidate-card__foot"><span>5h ago</span><span class="candidate-score">87</span></div></article>
+              <button class="kanban-add" type="button">+ Add candidate</button>
+            </div>
+            <div class="kanban-column" data-stage="screening"><div class="kanban-column__head"><span><i class="stage-dot stage-dot--blue"></i>Screening <b>8</b></span><button>•••</button></div>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--orange">SR</span><button>•••</button></div><h4>Sofia Rodriguez</h4><p>Lead Product Designer</p><div class="candidate-tags"><span>Leadership</span><span>B2B</span></div><div class="candidate-card__foot"><span>Yesterday</span><span class="candidate-score candidate-score--high">96</span></div></article>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--green">ON</span><button>•••</button></div><h4>Oliver Nash</h4><p>UX/UI Designer</p><div class="candidate-tags"><span>Mobile</span><span>Prototyping</span></div><div class="candidate-card__foot"><span>Yesterday</span><span class="candidate-score">84</span></div></article>
+              <button class="kanban-add" type="button">+ Add candidate</button>
+            </div>
+            <div class="kanban-column kanban-column--active" data-stage="interview"><div class="kanban-column__head"><span><i class="stage-dot stage-dot--orange"></i>Interview <b>5</b></span><button>•••</button></div>
+              <article class="candidate-card candidate-card--featured"><div class="candidate-card__top"><span class="candidate-avatar avatar--pink">AK</span><span class="live-badge">Today</span></div><h4>Amelia King</h4><p>Senior Product Designer</p><div class="interview-slot"><span>◷</span><div><strong>Design Interview</strong><small>2:30 PM · 45 min</small></div></div><div class="candidate-card__foot"><span class="interviewer-stack"><i>OL</i><i>DR</i><i>+2</i></span><span class="candidate-score candidate-score--high">98</span></div></article>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--teal">TW</span><button>•••</button></div><h4>Theo Williams</h4><p>Product Designer</p><div class="candidate-tags"><span>Enterprise</span><span>Figma</span></div><div class="candidate-card__foot"><span>Tomorrow</span><span class="candidate-score">91</span></div></article>
+              <button class="kanban-add" type="button">+ Add candidate</button>
+            </div>
+            <div class="kanban-column" data-stage="offer"><div class="kanban-column__head"><span><i class="stage-dot stage-dot--purple"></i>Offer <b>2</b></span><button>•••</button></div>
+              <article class="candidate-card"><div class="candidate-card__top"><span class="candidate-avatar avatar--navy">LB</span><span class="offer-badge">Offer sent</span></div><h4>Lucas Brown</h4><p>Senior Product Designer</p><div class="candidate-progress"><span><i style="width:75%"></i></span><small>3 of 4 approvals</small></div><div class="candidate-card__foot"><span>Sent May 24</span><span class="candidate-score candidate-score--high">97</span></div></article>
+              <button class="kanban-add" type="button">+ Add candidate</button>
+            </div>
+            <div class="kanban-column" data-stage="hired"><div class="kanban-column__head"><span><i class="stage-dot stage-dot--green"></i>Hired <b>3</b></span><button>•••</button></div>
+              <article class="candidate-card candidate-card--hired"><div class="hired-check">✓</div><div class="candidate-card__top"><span class="candidate-avatar avatar--yellow">IN</span><button>•••</button></div><h4>Isla Nguyen</h4><p>Product Designer</p><div class="start-date"><span>Start date</span><strong>June 10</strong></div><div class="candidate-card__foot"><span>Hired May 20</span><span class="candidate-score candidate-score--high">99</span></div></article>
+              <button class="kanban-add" type="button">+ Add candidate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-section section" id="dashboard">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal"><div class="eyebrow">ONE POWERFUL WORKSPACE</div><h2>Your Hiring Command Center</h2><p>Turn recruiting data into better decisions with a dashboard built for clarity, speed, and collaboration.</p></div>
+        <div class="dashboard-shell product-window reveal">
+          <aside class="dashboard-sidebar">
+            <a class="brand dashboard-brand" href="#home"><span class="brand__mark brand__mark--small"><svg viewBox="0 0 36 36"><path d="M9 9.5h7v7H9zM20 9.5h7v7h-7zM9 20.5h7v7H9z"/><path class="brand__mark-accent" d="M20 20.5h7v7h-7z"/></svg></span><span>JobFlow <strong>HR</strong></span></a>
+            <nav class="dashboard-nav"><small>WORKSPACE</small><button class="active" data-dashboard-tab="overview"><span>⌂</span>Overview</button><button data-dashboard-tab="jobs"><span>▣</span>Jobs <b>24</b></button><button data-dashboard-tab="candidates"><span>♙</span>Candidates</button><button data-dashboard-tab="interviews"><span>□</span>Interviews <i>8</i></button><button data-dashboard-tab="analytics"><span>⌁</span>Analytics</button><small>MANAGE</small><button><span>♧</span>Team</button><button><span>⚙</span>Settings</button></nav>
+            <div class="upgrade-card"><span>✦</span><strong>Unlock more insights</strong><p>Upgrade to Growth for advanced analytics.</p><button type="button">View plans</button></div>
+            <div class="dashboard-user"><span class="candidate-avatar avatar--green">OH</span><div><strong>Olivia Hart</strong><small>HR Administrator</small></div><button>•••</button></div>
+          </aside>
+          <div class="dashboard-app">
+            <header class="dashboard-topbar"><button class="dashboard-menu" type="button">☰</button><label class="dashboard-search"><span>⌕</span><input type="search" placeholder="Search candidates, jobs..." aria-label="Search dashboard"><kbd>⌘ K</kbd></label><div class="dashboard-topbar__right"><button title="Help">?</button><button class="notification-button" title="Notifications">♧<i></i></button><button class="btn btn--primary btn--small ripple" type="button">+ Create job</button></div></header>
+            <div class="dashboard-view" id="dashboard-view">
+              <div class="dashboard-welcome"><div><p>Tuesday, May 28</p><h3>Good morning, Olivia</h3><span>Here's what's happening with your hiring today.</span></div><button class="date-filter" type="button">□ Last 30 days⌄</button></div>
+              <div class="dashboard-metrics">
+                <article><div><span class="metric-icon metric-icon--green">▣</span><em>+8.2%</em></div><small>Open Positions</small><strong data-count="24">24</strong><p><b>4</b> closing this week</p></article>
+                <article><div><span class="metric-icon metric-icon--blue">♙</span><em>+12.5%</em></div><small>Total Candidates</small><strong data-count="1248">1,248</strong><p><b>86</b> new this week</p></article>
+                <article><div><span class="metric-icon metric-icon--orange">□</span><em>+5.4%</em></div><small>Interviews</small><strong data-count="86">86</strong><p><b>12</b> scheduled today</p></article>
+                <article><div><span class="metric-icon metric-icon--purple">✓</span><em>+18.9%</em></div><small>Hires This Month</small><strong data-count="42">42</strong><p><b>7</b> this week</p></article>
+              </div>
+              <div class="dashboard-grid dashboard-grid--top">
+                <article class="dashboard-card hiring-chart-card"><div class="dashboard-card__head"><div><h4>Hiring Performance</h4><p>Applications and hires over time</p></div><div class="chart-legend-inline"><span><i></i>Applications</span><span><i></i>Hires</span><button>Monthly⌄</button></div></div><div class="large-chart"><div class="large-chart__axis"><span>800</span><span>600</span><span>400</span><span>200</span><span>0</span></div><svg viewBox="0 0 720 250" preserveAspectRatio="none"><defs><linearGradient id="mainArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16a34a" stop-opacity=".22"/><stop offset="1" stop-color="#16a34a" stop-opacity="0"/></linearGradient></defs><path class="chart-grid" d="M0 15H720M0 70H720M0 125H720M0 180H720M0 235H720"/><path class="chart-area" d="M0 202 C52 184 70 190 112 157 S181 170 229 127 S305 145 355 95 S430 119 478 72 S555 98 602 46 S671 59 720 27 V245H0Z" fill="url(#mainArea)"/><path class="chart-line" d="M0 202 C52 184 70 190 112 157 S181 170 229 127 S305 145 355 95 S430 119 478 72 S555 98 602 46 S671 59 720 27"/><path class="chart-line chart-line--orange" d="M0 224 C70 220 84 211 112 209 S190 214 229 191 S310 202 355 173 S430 190 478 157 S550 175 602 136 S673 150 720 112"/></svg><div class="chart-tooltip"><small>May 20</small><strong>648 applications</strong><span>32 hires</span></div><div class="large-chart__labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span></div></div></article>
+                <article class="dashboard-card interview-card"><div class="dashboard-card__head"><div><h4>Upcoming Interviews</h4><p>12 scheduled today</p></div><button>View all</button></div><div class="interview-list"><div class="interview-item"><div class="interview-time"><strong>10:00</strong><span>AM</span></div><span class="candidate-avatar avatar--pink">AK</span><div><strong>Amelia King</strong><p>Design interview · 45 min</p><small><i></i>Senior Product Designer</small></div><button>•••</button></div><div class="interview-item"><div class="interview-time"><strong>11:30</strong><span>AM</span></div><span class="candidate-avatar avatar--teal">TW</span><div><strong>Theo Williams</strong><p>Technical interview · 60 min</p><small><i></i>Frontend Engineer</small></div><button>•••</button></div><div class="interview-item"><div class="interview-time"><strong>2:30</strong><span>PM</span></div><span class="candidate-avatar avatar--orange">SR</span><div><strong>Sofia Rodriguez</strong><p>Culture interview · 30 min</p><small><i></i>Product Design Lead</small></div><button>•••</button></div></div><button class="full-schedule" type="button">Open interview schedule →</button></article>
+              </div>
+              <div class="dashboard-grid dashboard-grid--bottom">
+                <article class="dashboard-card candidate-table-card"><div class="dashboard-card__head"><div><h4>Top Candidates</h4><p>Candidates requiring your attention</p></div><div><button>☷ Filter</button><button>View all →</button></div></div><div class="candidate-table"><div class="candidate-table__row candidate-table__head"><span>Candidate</span><span>Role</span><span>Stage</span><span>Applied</span><span>Score</span><span></span></div><div class="candidate-table__row"><span><i class="candidate-avatar avatar--pink">AK</i><b>Amelia King<small>amelia@talent.co</small></b></span><span>Sr. Product Designer</span><span><em class="status status--interview">Interview</em></span><span>May 18</span><span><strong class="table-score">98</strong></span><button>•••</button></div><div class="candidate-table__row"><span><i class="candidate-avatar avatar--orange">SR</i><b>Sofia Rodriguez<small>sofia@design.io</small></b></span><span>Product Design Lead</span><span><em class="status status--screening">Screening</em></span><span>May 20</span><span><strong class="table-score">96</strong></span><button>•••</button></div><div class="candidate-table__row"><span><i class="candidate-avatar avatar--navy">LB</i><b>Lucas Brown<small>lucas@workmail.com</small></b></span><span>Sr. Product Designer</span><span><em class="status status--offer">Offer</em></span><span>May 12</span><span><strong class="table-score">97</strong></span><button>•••</button></div></div></article>
+                <article class="dashboard-card activity-card"><div class="dashboard-card__head"><div><h4>Recent Activity</h4><p>Latest team updates</p></div><button>•••</button></div><div class="activity-list"><div><span class="activity-icon activity-icon--green">✓</span><p><strong>Olivia</strong> moved <b>Lucas Brown</b> to Offer<small>12 minutes ago</small></p></div><div><span class="activity-icon activity-icon--orange">□</span><p><strong>David</strong> scheduled an interview with <b>Amelia King</b><small>38 minutes ago</small></p></div><div><span class="activity-icon activity-icon--blue">+</span><p><strong>Maya Chen</strong> applied for Product Designer<small>2 hours ago</small></p></div></div></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section section--compact" aria-label="JobFlow statistics">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong><span class="counter" data-target="10000">0</span>+</strong><p>Candidates Managed</p></div>
+        <div class="stat reveal reveal--delay-sm"><strong><span class="counter" data-target="500">0</span>+</strong><p>Companies</p></div>
+        <div class="stat reveal reveal--delay-md"><strong><span class="counter" data-target="95">0</span>%</strong><p>Hiring Success</p></div>
+        <div class="stat reveal reveal--delay-lg"><strong><span class="counter" data-target="40">0</span>%</strong><p>Faster Recruitment</p></div>
+      </div>
+    </section>
+
+    <section class="why-section section" id="solutions">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal"><div class="eyebrow">WHY JOBFLOW HR</div><h2>Better Hiring Starts With Better Tools</h2><p>Give your team the structure, insight, and confidence to build exceptional teams.</p></div>
+        <div class="why-grid">
+          <article class="why-card reveal"><span class="why-number">01</span><div class="why-icon">↗</div><h3>Faster Hiring</h3><p>Reduce manual work and keep every process moving with automation that saves hours every week.</p><div class="why-metric"><strong>40%</strong><span>faster time-to-hire</span></div></article>
+          <article class="why-card reveal reveal--delay-sm"><span class="why-number">02</span><div class="why-icon why-icon--blue">♙</div><h3>Better Collaboration</h3><p>Keep hiring managers, recruiters, and interviewers aligned in one shared workspace.</p><div class="collaboration-visual"><span class="candidate-avatar avatar--green">OH</span><span class="candidate-avatar avatar--blue">DR</span><span class="candidate-avatar avatar--orange">+8</span><i>All aligned</i></div></article>
+          <article class="why-card reveal reveal--delay-md"><span class="why-number">03</span><div class="why-icon why-icon--orange">⌁</div><h3>Data-Driven Decisions</h3><p>Turn real-time recruitment analytics into clear decisions and continuous improvement.</p><div class="spark-visual"><span>Hiring quality</span><strong>+24%</strong><svg viewBox="0 0 180 40" preserveAspectRatio="none"><path d="M0 34 C28 31 31 25 55 27 S86 16 108 20 S143 8 180 4"/></svg></div></article>
+          <article class="why-card reveal reveal--delay-lg"><span class="why-number">04</span><div class="why-icon why-icon--navy">◇</div><h3>Secure Cloud Platform</h3><p>Protect candidate data with enterprise-grade security and dependable infrastructure.</p><div class="security-badges"><span>SOC 2</span><span>GDPR</span><span>99.9%</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="resources">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal"><div class="eyebrow">CUSTOMER STORIES</div><h2>Loved by Modern Hiring Teams</h2><p>See why ambitious companies trust JobFlow HR to build their best teams.</p></div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><div class="quote-mark">“</div><div class="rating">★★★★★</div><blockquote>JobFlow gave us the visibility we were missing. Our hiring managers now know exactly where every candidate stands, and our process feels dramatically more organized.</blockquote><div class="testimonial-author"><span class="candidate-avatar avatar--blue">EC</span><div><strong>Emily Carter</strong><p>HR Director, NovaTech</p></div></div></article>
+          <article class="testimonial-card testimonial-card--featured reveal reveal--delay-sm"><div class="featured-label">MOST LOVED</div><div class="quote-mark">“</div><div class="rating">★★★★★</div><blockquote>We cut our average time-to-hire by 42% in the first quarter. The platform is powerful enough for recruiters and simple enough for every hiring manager to use.</blockquote><div class="testimonial-author"><span class="candidate-avatar avatar--orange">MJ</span><div><strong>Marcus Johnson</strong><p>Talent Acquisition Manager, Vertex</p></div></div><div class="testimonial-result"><span><strong>42%</strong> faster hiring</span><span><strong>3.2x</strong> team adoption</span></div></article>
+          <article class="testimonial-card reveal reveal--delay-md"><div class="quote-mark">“</div><div class="rating">★★★★★</div><blockquote>As a growing startup, we needed structure without bureaucracy. JobFlow helped us scale from 20 to 80 people while keeping candidate experience personal.</blockquote><div class="testimonial-author"><span class="candidate-avatar avatar--green">SP</span><div><strong>Sarah Patel</strong><p>Founder, BrightWorks</p></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal"><div class="eyebrow">SIMPLE, TRANSPARENT PRICING</div><h2>Choose the Plan That Fits Your Team</h2><p>Start free for 14 days. No credit card required. Upgrade, downgrade, or cancel anytime.</p><div class="billing-toggle" role="group" aria-label="Billing period"><button class="active" type="button" data-billing="monthly">Monthly</button><button type="button" data-billing="annual">Yearly <span>Save 20%</span></button></div></div>
+        <div class="pricing-grid">
+          <article class="price-card reveal"><div class="price-card__top"><span class="plan-icon plan-icon--starter">◇</span><div><h3>Starter</h3><p>For small teams starting to hire</p></div></div><div class="price"><span>$</span><strong data-monthly="29" data-annual="23">29</strong><small>/month</small></div><p class="price-note">Up to 5 active jobs</p><a class="btn btn--secondary btn--block ripple" href="#contact">Start free trial</a><ul><li>Applicant tracking system</li><li>Custom hiring pipeline</li><li>Interview scheduling</li><li>Email templates</li><li>Basic reports</li></ul></article>
+          <article class="price-card price-card--featured reveal reveal--delay-sm"><div class="popular-badge">MOST POPULAR</div><div class="price-card__top"><span class="plan-icon plan-icon--growth">↗</span><div><h3>Growth</h3><p>For growing teams scaling hiring</p></div></div><div class="price"><span>$</span><strong data-monthly="79" data-annual="63">79</strong><small>/month</small></div><p class="price-note">Unlimited active jobs</p><a class="btn btn--primary btn--block ripple" href="#contact">Start free trial</a><ul><li>Everything in Starter</li><li>Advanced automations</li><li>Recruitment analytics</li><li>Team scorecards</li><li>Custom career page</li><li>Priority support</li></ul></article>
+          <article class="price-card reveal reveal--delay-md"><div class="price-card__top"><span class="plan-icon plan-icon--enterprise">▦</span><div><h3>Enterprise</h3><p>For organizations hiring at scale</p></div></div><div class="price price--custom"><strong>Custom</strong></div><p class="price-note">Tailored to your organization</p><a class="btn btn--secondary btn--block ripple" href="#contact">Contact sales</a><ul><li>Everything in Growth</li><li>Single sign-on (SSO)</li><li>Advanced permissions</li><li>Custom integrations</li><li>Dedicated success manager</li><li>Enterprise SLA</li></ul></article>
+        </div>
+        <div class="pricing-trust"><span>✓ 14-day free trial</span><span>✓ No credit card required</span><span>✓ Cancel anytime</span></div>
+      </div>
+    </section>
+
+    <section class="faq section" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__intro reveal"><div class="eyebrow">FREQUENTLY ASKED</div><h2 id="faq-title">Questions? We Have Answers.</h2><p>Everything you need to know about JobFlow HR and how it can transform your hiring.</p><div class="faq-support"><div class="avatar-stack"><span>AM</span><span>RK</span><span>LS</span></div><div><strong>Still have questions?</strong><p>Our team is here to help.</p></div><a href="#contact">Talk to us →</a></div></div>
+        <div class="accordion reveal reveal--delay-sm">
+          <article class="accordion-item active"><button class="accordion-trigger" type="button" aria-expanded="true"><span>What is JobFlow HR?</span><i></i></button><div class="accordion-panel"><p>JobFlow HR is an all-in-one recruitment platform that helps teams attract, track, evaluate, and hire candidates. It centralizes your jobs, applications, interviews, feedback, and reporting in one easy-to-use workspace.</p></div></article>
+          <article class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false"><span>Can I try JobFlow HR before purchasing?</span><i></i></button><div class="accordion-panel"><p>Yes. Every plan includes a 14-day free trial with no credit card required, so your team can test the complete workflow before choosing a subscription.</p></div></article>
+          <article class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false"><span>Does JobFlow integrate with our existing tools?</span><i></i></button><div class="accordion-panel"><p>JobFlow connects with popular calendars, email providers, job boards, collaboration tools, and HR systems. Enterprise customers can also request custom integrations.</p></div></article>
+          <article class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false"><span>Is our candidate data secure?</span><i></i></button><div class="accordion-panel"><p>Yes. We use encryption in transit and at rest, role-based permissions, routine security reviews, and infrastructure designed to support GDPR and SOC 2 requirements.</p></div></article>
+          <article class="accordion-item"><button class="accordion-trigger" type="button" aria-expanded="false"><span>Can JobFlow support multiple teams and locations?</span><i></i></button><div class="accordion-panel"><p>Absolutely. You can organize hiring by department, office, region, or business unit while maintaining consistent workflows, permissions, and reporting across your organization.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section" id="contact">
+      <div class="container final-cta__inner reveal">
+        <div class="final-cta__pattern" aria-hidden="true"></div>
+        <div class="final-cta__content"><div class="eyebrow eyebrow--light">YOUR NEXT GREAT HIRE STARTS HERE</div><h2>Build Stronger Teams With Smarter Hiring.</h2><p>Join 500+ companies creating better candidate experiences and making confident hiring decisions with JobFlow HR.</p><div class="final-cta__actions"><a class="btn btn--white btn--large ripple" href="#pricing">Start Free Trial <span>→</span></a><button class="btn btn--ghost-light btn--large ripple" type="button" data-demo-button>Book a Demo</button></div><small>No credit card required · Free 14-day trial · Cancel anytime</small></div>
+        <div class="final-cta__visual" aria-hidden="true"><div class="orbit orbit--one"></div><div class="orbit orbit--two"></div><div class="cta-center-logo"><span class="brand__mark"><svg viewBox="0 0 36 36"><path d="M9 9.5h7v7H9zM20 9.5h7v7h-7zM9 20.5h7v7H9z"/><path class="brand__mark-accent" d="M20 20.5h7v7h-7z"/></svg></span></div><span class="orbit-person orbit-person--one">AK<i>✓</i></span><span class="orbit-person orbit-person--two">DR<i>+</i></span><span class="orbit-person orbit-person--three">MS<i>★</i></span><span class="orbit-person orbit-person--four">OL<i>✓</i></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand"><a class="brand brand--light" href="#home"><span class="brand__mark"><svg viewBox="0 0 36 36"><path d="M9 9.5h7v7H9zM20 9.5h7v7h-7zM9 20.5h7v7H9z"/><path class="brand__mark-accent" d="M20 20.5h7v7h-7z"/></svg></span><span>JobFlow <strong>HR</strong></span></a><p>Smarter recruitment software for teams that care about building a great company.</p><div class="social-links"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a></div></div>
+      <div class="footer__links"><div><h3>Product</h3><a href="#features">Features</a><a href="#pipeline">Candidate Pipeline</a><a href="#dashboard">Analytics</a><a href="#pricing">Pricing</a><a href="#">Integrations</a></div><div><h3>Company</h3><a href="#">About us</a><a href="#">Careers <span>We're hiring</span></a><a href="#">Partners</a><a href="#">Contact</a><a href="#">Security</a></div><div><h3>Resources</h3><a href="#">Help Center</a><a href="#">Recruiting Guides</a><a href="#">HR Templates</a><a href="#">Customer Stories</a><a href="#">Blog</a></div></div>
+      <div class="footer__newsletter"><h3>Hiring insights, delivered.</h3><p>Join 8,000+ HR leaders getting practical hiring advice each month.</p><form id="newsletter-form"><label><input type="email" placeholder="Work email address" required aria-label="Work email address"><button class="ripple" type="submit">Subscribe</button></label><small>By subscribing, you agree to our Privacy Policy.</small></form></div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 JobFlow HR. All rights reserved.</p><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Settings</a></div><span><i></i> All systems operational</span></div>
+  </footer>
+
+  <div class="demo-modal" id="demo-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="demo-title">
+    <div class="demo-modal__backdrop" data-close-modal></div>
+    <div class="demo-modal__dialog"><button class="demo-modal__close" type="button" data-close-modal aria-label="Close demo">×</button><div class="demo-modal__icon">▶</div><h2 id="demo-title">See JobFlow HR in action</h2><p>Explore how your team can organize candidates, automate workflows, and hire faster.</p><form id="demo-form"><label>Work email<input type="email" placeholder="you@company.com" required></label><label>Company size<select required><option value="">Select team size</option><option>1–20</option><option>21–100</option><option>101–500</option><option>500+</option></select></label><button class="btn btn--primary btn--block ripple" type="submit">Book my demo</button></form></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><p><strong>You're all set!</strong><small>We'll be in touch shortly.</small></p></div>
+  <script src="script.js"></script>
+</body>
+</html>

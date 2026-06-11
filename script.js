@@ -1,0 +1,184 @@
+const translations = {
+  en: {
+    pageTitle: 'AHMAD. | Premium Websites for Businesses',
+    pageDescription: 'Premium websites built by Ahmad Alharbi for businesses that want to look professional and trustworthy online.',
+    skipLink: 'Skip to projects', mainNav: 'Main navigation', openNav: 'Open navigation', closeNav: 'Close navigation', backTop: 'Back to top', statsAria: 'Project statistics',
+    navProjects: 'Projects', navServices: 'Services', navContact: 'Contact', letsTalk: "Let's Talk", selectedWork: 'Selected work',
+    heroTitle: 'Premium Websites for Businesses That Want to Stand Out',
+    heroSubtitle: 'Explore a collection of modern websites, landing pages, and digital experiences crafted to help businesses build trust, showcase their brand, and make a stronger first impression.',
+    viewProjects: 'View Projects', startProject: 'Start a Project', featuredLabel: '01 / Featured Projects', workTitle: 'The work, up close.',
+    viewLive: 'View live project', livePreview: 'Live Preview',
+    cloudCategory: 'SaaS Landing Page', cloudDescription: 'Modern SaaS website with dashboard previews and conversion-focused sections.', cloudAria: 'Open CloudPilot live preview',
+    novaCategory: 'Creative Agency Website', novaDescription: 'Bold creative studio experience with premium dark visuals.', novaAria: 'Open Nova Agency live preview',
+    ruyaCategory: 'Arabic Corporate Website', ruyaTitle: 'Dar Al Ruya', ruyaDescription: 'Arabic RTL corporate website designed for Gulf businesses.', ruyaAria: 'Open Dar Al Ruya live preview',
+    joreemCategory: 'Luxury Ceramic & Marble Brand', joreemDescription: 'Premium Arabic showroom experience for ceramic, porcelain, and marble products.', joreemAria: 'Open JOREEM live preview',
+    capabilitiesLabel: '02 / Capabilities', servicesTitle: 'What I Build', serviceLanding: 'Landing Pages', serviceBusiness: 'Business Websites', serviceArabic: 'Arabic RTL Websites', serviceCorporate: 'Corporate Websites', servicePortfolio: 'Portfolio Websites',
+    statProjects: 'Projects Built', statResponsive: 'Responsive', statLanguages: 'Arabic & English',
+    contactLabel: '03 / Contact', contactTitle: 'Ready to Build Something That Stands Out?', contactIntro: 'Tell me about your business and what you want to create. I’ll help turn your idea into a polished website that builds trust from the first visit.',
+    emailLabel: 'Email', connectLinkedIn: 'Connect on LinkedIn', viewGithub: 'View my GitHub', availability: 'Available for selected freelance projects', formEyebrow: 'Project inquiry',
+    fieldName: 'Name', fieldEmail: 'Email', fieldProject: 'Project Type', fieldMessage: 'Message', namePlaceholder: 'Your name', emailPlaceholder: 'you@company.com', messagePlaceholder: 'Tell me about your business and project goals',
+    optionSelect: 'Select a project type', optionLanding: 'Landing Page', optionBusiness: 'Business Website', optionArabic: 'Arabic RTL Website', optionRedesign: 'Website Redesign', optionOther: 'Other',
+    sendMessage: 'Send Message', sendingMessage: 'Sending...', replyNote: 'I usually reply as soon as possible.', formSending: 'Your message is being sent securely.',
+    footerName: 'Ahmad Alharbi', rights: 'All rights reserved'
+  },
+  ar: {
+    pageTitle: 'أحمد | مواقع إلكترونية احترافية للشركات',
+    pageDescription: 'أصمم وأطور مواقع إلكترونية احترافية تساعد الشركات على إبراز هويتها، بناء الثقة، والظهور بصورة تليق بجودة أعمالها.',
+    skipLink: 'انتقل إلى المشاريع', mainNav: 'القائمة الرئيسية', openNav: 'فتح القائمة', closeNav: 'إغلاق القائمة', backTop: 'العودة إلى الأعلى', statsAria: 'معلومات عن المشاريع',
+    navProjects: 'المشاريع', navServices: 'الخدمات', navContact: 'تواصل', letsTalk: 'ابدأ مشروعك', selectedWork: 'نماذج من الأعمال',
+    heroTitle: 'مواقع احترافية تعكس جودة أعمالك',
+    heroSubtitle: 'استعرض مجموعة من المواقع وصفحات الهبوط المصممة بعناية لمساعدة الشركات على بناء الثقة، إبراز هويتها، وترك انطباع أول احترافي لدى عملائها.',
+    viewProjects: 'استعرض المشاريع', startProject: 'ابدأ مشروعك', featuredLabel: '01 / مشاريع مختارة', workTitle: 'استعرض المشاريع بالتفصيل',
+    viewLive: 'استعرض المشروع مباشرة', livePreview: 'معاينة مباشرة',
+    cloudCategory: 'صفحة هبوط لمنصة SaaS', cloudDescription: 'قالب صفحة هبوط لمنصة SaaS حديثة، يحتوي على واجهة عرض للوحة التحكم، أقسام تسويقية واضحة، وأسعار مصممة لزيادة الثقة والتحويل.', cloudAria: 'فتح المعاينة المباشرة لمشروع كلاود بايلوت',
+    novaCategory: 'موقع وكالة إبداعية', novaDescription: 'موقع إبداعي لوكالة رقمية بأسلوب داكن وفاخر، يركز على إبراز الهوية البصرية، الأعمال، وتجربة المستخدم بطريقة مميزة.', novaAria: 'فتح المعاينة المباشرة لمشروع نوفا إيجنسي',
+    ruyaCategory: 'موقع شركة عربي', ruyaTitle: 'دار الرؤية', ruyaDescription: 'موقع عربي RTL لشركة استشارات خليجية، مصمم بهوية احترافية تناسب الشركات والجهات التي تبحث عن حضور رقمي موثوق.', ruyaAria: 'فتح المعاينة المباشرة لمشروع دار الرؤية',
+    joreemCategory: 'علامة فاخرة للسيراميك والرخام', joreemDescription: 'صفحة هبوط عربية فاخرة لعلامة متخصصة في السيراميك والبورسلان والرخام، مستوحاة من هوية بصرية حقيقية وتعرض المنتجات بأسلوب راقٍ.', joreemAria: 'فتح المعاينة المباشرة لمشروع جوريم',
+    capabilitiesLabel: '02 / الخدمات', servicesTitle: 'ما الذي أقدمه؟', serviceLanding: 'صفحات هبوط احترافية', serviceBusiness: 'مواقع شركات', serviceArabic: 'مواقع عربية RTL', serviceCorporate: 'مواقع مؤسسية', servicePortfolio: 'مواقع بورتفوليو',
+    statProjects: 'مشاريع تم تنفيذها', statResponsive: 'متوافق مع جميع الشاشات', statLanguages: 'بالعربية والإنجليزية',
+    contactLabel: '03 / تواصل', contactTitle: 'لنحوّل فكرتك إلى موقع احترافي', contactIntro: 'إذا كنت تحتاج إلى موقع إلكتروني حديث أو صفحة هبوط تعكس جودة عملك، يسعدني مساعدتك في تحويل الفكرة إلى تجربة رقمية واضحة وجذابة.',
+    emailLabel: 'البريد الإلكتروني', connectLinkedIn: 'تواصل معي عبر لينكدإن', viewGithub: 'استعرض أعمالي على GitHub', availability: 'متاح حالياً لمشاريع المواقع وصفحات الهبوط.', formEyebrow: 'تفاصيل المشروع',
+    fieldName: 'الاسم', fieldEmail: 'البريد الإلكتروني', fieldProject: 'نوع المشروع', fieldMessage: 'الرسالة', namePlaceholder: 'اكتب اسمك', emailPlaceholder: 'بريدك الإلكتروني', messagePlaceholder: 'حدثني باختصار عن نشاطك، فكرتك، وما الذي ترغب في تحقيقه',
+    optionSelect: 'اختر نوع المشروع', optionLanding: 'صفحة هبوط', optionBusiness: 'موقع شركة', optionArabic: 'موقع عربي RTL', optionRedesign: 'إعادة تصميم موقع', optionOther: 'أخرى',
+    sendMessage: 'إرسال الرسالة', sendingMessage: 'جارٍ إرسال الرسالة...', replyNote: 'عادةً أرد في أقرب وقت ممكن.', formSending: 'جارٍ إرسال رسالتك، شكراً لتواصلك.',
+    footerName: 'أحمد الحربي', rights: 'جميع الحقوق محفوظة'
+  }
+};
+
+const root = document.documentElement;
+const header = document.querySelector('#header');
+const menuToggle = document.querySelector('.menu-toggle');
+const languageSwitch = document.querySelector('#language-switch');
+const nav = document.querySelector('#nav');
+const navLinks = [...document.querySelectorAll('.site-nav a')];
+const sections = [...document.querySelectorAll('main section[id]')];
+const backTop = document.querySelector('.back-top');
+const contactForm = document.querySelector('.contact-form');
+const formNote = document.querySelector('#form-note');
+let currentLanguage = getSavedLanguage();
+
+function getSavedLanguage() {
+  try { return localStorage.getItem('ahmad-language') === 'ar' ? 'ar' : 'en'; }
+  catch { return 'en'; }
+}
+
+function saveLanguage(language) {
+  try { localStorage.setItem('ahmad-language', language); }
+  catch { /* Storage can be unavailable on restricted file URLs. */ }
+}
+
+function applyLanguage(language) {
+  const copy = translations[language];
+  currentLanguage = language;
+  root.lang = language;
+  root.dir = language === 'ar' ? 'rtl' : 'ltr';
+  document.title = copy.pageTitle;
+  document.querySelector('meta[name="description"]').content = copy.pageDescription;
+
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const value = copy[element.dataset.i18n];
+    if (value !== undefined) element.textContent = value;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    const value = copy[element.dataset.i18nPlaceholder];
+    if (value !== undefined) element.placeholder = value;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
+    const value = copy[element.dataset.i18nAria];
+    if (value !== undefined) element.setAttribute('aria-label', value);
+  });
+
+  languageSwitch.querySelector('span').textContent = language === 'en' ? 'العربية' : 'English';
+  languageSwitch.setAttribute('aria-label', language === 'en' ? 'Switch to Arabic' : 'التبديل إلى الإنجليزية');
+  saveLanguage(language);
+}
+
+applyLanguage(currentLanguage);
+
+languageSwitch.addEventListener('click', () => {
+  document.body.classList.add('language-changing');
+  window.setTimeout(() => {
+    applyLanguage(currentLanguage === 'en' ? 'ar' : 'en');
+    document.body.classList.remove('language-changing');
+  }, 120);
+});
+
+function updateScrollState() {
+  header.classList.toggle('scrolled', window.scrollY > 18);
+  backTop.classList.toggle('visible', window.scrollY > 700);
+}
+
+updateScrollState();
+window.addEventListener('scroll', updateScrollState, { passive: true });
+
+menuToggle.addEventListener('click', () => {
+  const open = menuToggle.classList.toggle('active');
+  nav.classList.toggle('open', open);
+  document.body.classList.toggle('menu-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', translations[currentLanguage][open ? 'closeNav' : 'openNav']);
+});
+
+navLinks.forEach((link) => link.addEventListener('click', () => {
+  menuToggle.classList.remove('active');
+  nav.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', translations[currentLanguage].openNav);
+}));
+
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -45px' });
+
+document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+const activeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+  });
+}, { rootMargin: '-35% 0px -58% 0px' });
+
+sections.forEach((section) => activeObserver.observe(section));
+
+document.querySelectorAll('.ripple').forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const wave = document.createElement('span');
+    wave.className = 'ripple-wave';
+    wave.style.width = wave.style.height = `${size}px`;
+    wave.style.left = `${event.clientX - rect.left - size / 2}px`;
+    wave.style.top = `${event.clientY - rect.top - size / 2}px`;
+    button.appendChild(wave);
+    wave.addEventListener('animationend', () => wave.remove());
+  });
+});
+
+document.querySelectorAll('.project-visual').forEach((visual) => {
+  const browser = visual.querySelector('.browser');
+  visual.addEventListener('pointermove', (event) => {
+    if (!window.matchMedia('(pointer: fine) and (prefers-reduced-motion: no-preference)').matches) return;
+    const rect = visual.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    browser.style.transform = `translateY(3px) scale(1.015) rotateX(${-y * 1.2}deg) rotateY(${x * 1.2}deg)`;
+  });
+  visual.addEventListener('pointerleave', () => { browser.style.transform = ''; });
+});
+
+contactForm.addEventListener('submit', () => {
+  const submitButton = contactForm.querySelector('.form-submit');
+  submitButton.disabled = true;
+  submitButton.querySelector('span').textContent = translations[currentLanguage].sendingMessage;
+  formNote.classList.add('success');
+  formNote.querySelector('span').textContent = translations[currentLanguage].formSending;
+});
+
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+document.querySelector('#year').textContent = new Date().getFullYear();
