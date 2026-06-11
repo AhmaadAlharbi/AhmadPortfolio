@@ -2114,6 +2114,14 @@ button {
   gap: var(--space-4);
 }
 
+.footer__credit {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.75rem;
+  transition: color var(--transition-fast);
+}
+
+.footer__credit:hover { color: rgba(255,255,255,0.75); }
+
 .footer__copyright {
   font-size: 0.825rem;
   color: rgba(255,255,255,0.35);
