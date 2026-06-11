@@ -41,6 +41,7 @@ iframe { border: 0; }
 .site-nav a::before { content: ""; position: absolute; bottom: 3px; inset-inline-start: 0; width: 100%; height: 1px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
 .site-nav a:hover, .site-nav a.active { color: var(--text); }
 .site-nav a:hover::before, .site-nav a.active::before { transform: scaleX(1); }
+.site-nav .mobile-nav-cta { display: none; }
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .language-switch { height: 40px; display: flex; align-items: center; gap: 7px; padding: 0 12px; border: 1px solid var(--border); border-radius: 999px; background: rgba(17, 24, 39, .62); cursor: pointer; }
 .language-switch span { color: var(--muted-dark); font-size: 10px; font-weight: 700; transition: color .2s ease; }
@@ -266,16 +267,18 @@ html[dir="rtl"] .preview-card { direction: rtl; }
   @keyframes trustMarquee { to { transform: translateX(-25%); } }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .site-header { padding-top: 7px; }
-  .header-inner { height: 62px; padding: 0 14px; border-color: var(--border); background: rgba(15,23,42,.75); backdrop-filter: blur(18px); }
-  .site-nav { position: fixed; z-index: -1; inset: 0; display: flex; flex-direction: column; align-items: stretch; justify-content: center; gap: 0; margin: 0; padding: 95px 28px 40px; background: rgba(10,17,30,.98); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity .25s ease, visibility .25s ease, transform .25s ease; }
-  .site-nav.open { opacity: 1; visibility: visible; transform: none; }
-  .site-nav a { padding: 17px 0; border-bottom: 1px solid var(--border); font-size: 30px; }
+  .header-inner { position: relative; height: 62px; padding: 0 14px; border-color: var(--border); background: rgba(15,23,42,.88); box-shadow: 0 14px 38px rgba(2,6,23,.24); backdrop-filter: blur(18px); }
+  .site-nav { position: fixed; z-index: 110; top: 76px; inset-inline: 32px; width: auto; max-height: calc(100vh - 88px); max-height: calc(100dvh - 88px); overflow-y: auto; display: flex; flex-direction: column; align-items: stretch; gap: 0; margin: 0; padding: 12px 18px 18px; border: 1px solid var(--border); border-radius: 18px; background: rgba(10,17,30,.96); box-shadow: 0 24px 60px rgba(2,6,23,.5); backdrop-filter: blur(22px); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-12px) scale(.985); transform-origin: top center; transition: opacity .22s ease, visibility .22s ease, transform .22s ease; }
+  .site-nav.is-open { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+  .site-nav a { min-height: 54px; display: flex; align-items: center; padding: 14px 4px; border-bottom: 1px solid var(--border); font-size: 18px; }
   .site-nav a::before { display: none; }
-  .menu-toggle { display: block; }
-  .menu-toggle.active span:first-child { transform: translateY(3px) rotate(45deg); }
-  .menu-toggle.active span:last-child { transform: translateY(-3px) rotate(-45deg); }
+  .site-nav .mobile-nav-cta { min-height: 50px; display: inline-flex; justify-content: center; margin-top: 16px; padding: 0 20px; border: 0; font-size: 13px; }
+  .menu-toggle { position: relative; z-index: 120; flex: 0 0 auto; width: 44px; height: 44px; display: block; }
+  .menu-toggle.is-active span:first-child { transform: translateY(3px) rotate(45deg); }
+  .menu-toggle.is-active span:last-child { transform: translateY(-3px) rotate(-45deg); }
+  html[dir="rtl"] .site-nav .mobile-nav-cta i { transform: rotate(180deg); }
   .hero h1 { font-size: clamp(49px, 14vw, 70px); }
   .hero-gallery { min-height: 510px; }
   .preview-card { width: 91%; height: 126px; grid-template-columns: 20px 116px 1fr 14px; gap: 11px; padding: 11px; }
@@ -306,8 +309,9 @@ html[dir="rtl"] .preview-card { direction: rtl; }
 
 @media (max-width: 480px) {
   .shell { width: min(calc(100% - 24px), var(--shell)); }
+  .site-nav { inset-inline: 12px; }
   .section { padding: 88px 0; }
-  .language-switch { height: 38px; padding-inline: 10px; }
+  .language-switch { height: 44px; padding-inline: 10px; }
   .hero { padding-top: 125px; }
   .hero h1 { margin-top: 23px; font-size: 47px; }
   .hero-subtitle { font-size: 15px; }

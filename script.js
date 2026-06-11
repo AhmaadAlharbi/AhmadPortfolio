@@ -4,8 +4,8 @@ const translations = {
     pageDescription: 'Premium websites built by Ahmad Alharbi for businesses that want to look professional and trustworthy online.',
     skipLink: 'Skip to projects', mainNav: 'Main navigation', openNav: 'Open navigation', closeNav: 'Close navigation', backTop: 'Back to top',
     navProjects: 'Projects', navServices: 'Services', navContact: 'Contact', selectedWork: 'Selected work',
-    heroTitle: 'Premium Websites for Businesses That Want to Stand Out',
-    heroSubtitle: 'Explore a collection of modern websites, landing pages, and digital experiences crafted to help businesses build trust, showcase their brand, and make a stronger first impression.',
+    heroTitle: 'Helping Businesses Turn Ideas Into Professional Websites',
+    heroSubtitle: 'Explore a collection of websites, landing pages, and digital experiences built to help businesses establish credibility, showcase their brand, and create a stronger online presence.',
     viewProjects: 'View Projects', startProject: 'Start a Project', exhibitionCaption: 'A curated digital exhibition', scrollExplore: 'Scroll to explore',
     featuredLabel: '01 / Featured Projects', workTitle: 'The work, up close.', projectsAside: 'Four distinct digital experiences, each shaped around a different brand and audience.',
     livePreview: 'Live Preview',
@@ -27,8 +27,8 @@ const translations = {
     pageDescription: 'أصمم وأطور مواقع إلكترونية احترافية تساعد الشركات على إبراز هويتها، بناء الثقة، والظهور بصورة تليق بجودة أعمالها.',
     skipLink: 'انتقل إلى المشاريع', mainNav: 'القائمة الرئيسية', openNav: 'فتح القائمة', closeNav: 'إغلاق القائمة', backTop: 'العودة إلى الأعلى',
     navProjects: 'المشاريع', navServices: 'الخدمات', navContact: 'تواصل', selectedWork: 'نماذج من الأعمال',
-    heroTitle: 'مواقع احترافية تعكس جودة أعمالك',
-    heroSubtitle: 'استعرض مجموعة من المواقع وصفحات الهبوط المصممة بعناية لمساعدة الشركات على بناء الثقة، إبراز هويتها، وترك انطباع أول احترافي لدى عملائها.',
+    heroTitle: 'موقعك هو واجهة أعمالك',
+    heroSubtitle: 'مواقع وصفحات هبوط مصممة بعناية لمساعدة الشركات على الظهور بصورة احترافية وبناء الثقة مع عملائها منذ الزيارة الأولى.',
     viewProjects: 'استعرض المشاريع', startProject: 'ابدأ مشروعك', exhibitionCaption: 'معرض رقمي مختار بعناية', scrollExplore: 'مرر للاستكشاف',
     featuredLabel: '01 / مشاريع مختارة', workTitle: 'استعرض المشاريع بالتفصيل', projectsAside: 'أربع تجارب رقمية مختلفة، صُممت كل واحدة منها بما يناسب هوية العلامة وجمهورها.',
     livePreview: 'معاينة مباشرة',
@@ -52,7 +52,7 @@ const header = document.querySelector('#header');
 const menuToggle = document.querySelector('.menu-toggle');
 const languageSwitch = document.querySelector('#language-switch');
 const nav = document.querySelector('#nav');
-const navLinks = [...document.querySelectorAll('.site-nav a')];
+const navLinks = [...document.querySelectorAll('.site-nav > a:not(.mobile-nav-cta)')];
 const sections = [...document.querySelectorAll('main section[id]')];
 const backTop = document.querySelector('.back-top');
 const contactForm = document.querySelector('.contact-form');
@@ -73,8 +73,8 @@ function saveLanguage(language) {
 }
 
 function closeMenu() {
-  menuToggle.classList.remove('active');
-  nav.classList.remove('open');
+  menuToggle.classList.remove('is-active');
+  nav.classList.remove('is-open');
   document.body.classList.remove('menu-open');
   menuToggle.setAttribute('aria-expanded', 'false');
   menuToggle.setAttribute('aria-label', translations[currentLanguage].openNav);
@@ -125,15 +125,24 @@ updateScrollState();
 window.addEventListener('scroll', updateScrollState, { passive: true });
 
 menuToggle.addEventListener('click', () => {
-  const open = menuToggle.classList.toggle('active');
-  nav.classList.toggle('open', open);
+  const open = menuToggle.classList.toggle('is-active');
+  nav.classList.toggle('is-open', open);
   document.body.classList.toggle('menu-open', open);
   menuToggle.setAttribute('aria-expanded', String(open));
   menuToggle.setAttribute('aria-label', translations[currentLanguage][open ? 'closeNav' : 'openNav']);
 });
 
-navLinks.forEach((link) => link.addEventListener('click', closeMenu));
-window.addEventListener('resize', () => { if (window.innerWidth > 700) closeMenu(); });
+nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+document.addEventListener('click', (event) => {
+  if (!nav.classList.contains('is-open') || nav.contains(event.target) || menuToggle.contains(event.target)) return;
+  closeMenu();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape' || !nav.classList.contains('is-open')) return;
+  closeMenu();
+  menuToggle.focus();
+});
+window.addEventListener('resize', () => { if (window.innerWidth > 768) closeMenu(); });
 
 if ('IntersectionObserver' in window && !reduceMotion.matches) {
   const revealObserver = new IntersectionObserver((entries, observer) => {
