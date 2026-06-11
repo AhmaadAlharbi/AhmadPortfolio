@@ -4,161 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Premium websites built by Ahmad Alharbi for businesses that want to look professional and trustworthy online.">
-  <meta name="theme-color" content="#FAFAFA">
+  <meta name="theme-color" content="#0F172A">
   <title>AHMAD. | Premium Websites for Businesses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to projects</a>
+  <div class="noise" aria-hidden="true"></div>
+  <a class="skip-link" href="#projects" data-i18n="skipLink">Skip to projects</a>
 
   <header class="site-header" id="header">
     <div class="shell header-inner">
-      <a class="logo" href="#home">AHMAD<span>.</span></a>
+      <a class="logo" href="#home" aria-label="Ahmad home">AHMAD<span>.</span></a>
       <nav class="site-nav" id="nav" data-i18n-aria="mainNav" aria-label="Main navigation">
         <a href="#projects" data-i18n="navProjects">Projects</a>
         <a href="#services" data-i18n="navServices">Services</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
       <div class="header-actions">
-        <button class="language-switch" id="language-switch" type="button" aria-label="Switch to Arabic">
-          <i class="fa-solid fa-globe"></i><span>العربية</span>
-        </button>
-        <a class="button button-small button-dark ripple" href="#contact"><span data-i18n="letsTalk">Let's Talk</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button class="language-switch" id="language-switch" type="button" aria-label="Switch to Arabic"><span>EN</span><i></i><span>AR</span></button>
+        <a class="button button-small button-primary ripple header-cta" href="#contact"><span data-i18n="startProject">Start a Project</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <button class="menu-toggle" type="button" data-i18n-aria="openNav" aria-label="Open navigation" aria-controls="nav" aria-expanded="false"><span></span><span></span></button>
       </div>
-      <button class="menu-toggle" type="button" data-i18n-aria="openNav" aria-label="Open navigation" aria-controls="nav" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="shell hero-inner">
-        <div class="hero-index reveal"><span data-i18n="selectedWork">Selected work</span><span>2026</span></div>
-        <h1 class="reveal delay-1" data-i18n="heroTitle">Premium Websites for Businesses That Want to Stand Out</h1>
-        <div class="hero-bottom">
-          <p class="reveal delay-2" data-i18n="heroSubtitle">Explore a collection of modern websites, landing pages, and digital experiences crafted to help businesses build trust, showcase their brand, and make a stronger first impression.</p>
+      <div class="hero-glow glow-blue" aria-hidden="true"></div>
+      <div class="hero-glow glow-purple" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow reveal"><span class="status-dot"></span><span data-i18n="selectedWork">Selected work</span><span class="eyebrow-year">2026</span></div>
+          <h1 class="reveal delay-1" data-i18n="heroTitle">Premium Websites for Businesses That Want to Stand Out</h1>
+          <p class="hero-subtitle reveal delay-2" data-i18n="heroSubtitle">Explore a collection of modern websites, landing pages, and digital experiences crafted to help businesses build trust, showcase their brand, and make a stronger first impression.</p>
           <div class="hero-actions reveal delay-3">
-            <a class="button button-primary ripple" href="#projects"><span data-i18n="viewProjects">View Projects</span><i class="fa-solid fa-arrow-down"></i></a>
-            <a class="button button-outline ripple" href="#contact"><span data-i18n="startProject">Start a Project</span><i class="fa-solid fa-arrow-right"></i></a>
+            <a class="button button-primary ripple" href="#projects"><span data-i18n="viewProjects">View Projects</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+            <a class="button button-ghost ripple" href="#contact"><span data-i18n="startProject">Start a Project</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           </div>
+          <div class="hero-caption reveal delay-3"><span>01</span><i></i><span>04</span><small data-i18n="exhibitionCaption">A curated digital exhibition</small></div>
+        </div>
+
+        <div class="hero-gallery reveal delay-2" aria-label="Featured project previews">
+          <div class="gallery-glow" aria-hidden="true"></div>
+          <a class="preview-card preview-cloud" href="my-projects/cloudpilot/index.html" target="_blank" rel="noopener" data-depth="0.7">
+            <span class="preview-index">01</span><div class="preview-thumb"><iframe src="my-projects/cloudpilot/index.html" title="" tabindex="-1"></iframe></div><div><strong>CloudPilot</strong><small data-i18n="cloudCategory">SaaS Landing Page</small></div><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="preview-card preview-nova" href="my-projects/nova-agency/index.html" target="_blank" rel="noopener" data-depth="1">
+            <span class="preview-index">02</span><div class="preview-thumb"><iframe loading="lazy" src="my-projects/nova-agency/index.html" title="" tabindex="-1"></iframe></div><div><strong>Nova Agency</strong><small data-i18n="novaCategory">Creative Agency Website</small></div><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="preview-card preview-ruya" href="my-projects/dar-al-ruya/index.html" target="_blank" rel="noopener" data-depth="1.25">
+            <span class="preview-index">03</span><div class="preview-thumb"><iframe loading="lazy" src="my-projects/dar-al-ruya/index.html" title="" tabindex="-1"></iframe></div><div><strong data-i18n="ruyaTitle">Dar Al Ruya</strong><small data-i18n="ruyaCategory">Arabic Corporate Website</small></div><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="preview-card preview-joreem" href="my-projects/joreem/index.html" target="_blank" rel="noopener" data-depth="1.5">
+            <span class="preview-index">04</span><div class="preview-thumb"><iframe loading="lazy" src="my-projects/joreem/index.html" title="" tabindex="-1"></iframe></div><div><strong>JOREEM</strong><small data-i18n="joreemCategory">Luxury Ceramic &amp; Marble Brand</small></div><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </div>
       </div>
-      <div class="hero-rule"><span></span></div>
+      <a class="scroll-cue" href="#projects"><span data-i18n="scrollExplore">Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></a>
     </section>
 
-    <section class="projects" id="projects">
-      <div class="shell projects-heading">
-        <div class="section-label reveal" data-i18n="featuredLabel">01 / Featured Projects</div>
-        <h2 class="reveal" data-i18n="workTitle">The work, up close.</h2>
-      </div>
+    <section class="projects section" id="projects">
+      <div class="shell">
+        <div class="section-heading">
+          <div><div class="section-label reveal" data-i18n="featuredLabel">01 / Featured Projects</div><h2 class="reveal" data-i18n="workTitle">The work, up close.</h2></div>
+          <p class="section-aside reveal" data-i18n="projectsAside">Four distinct digital experiences, each shaped around a different brand and audience.</p>
+        </div>
 
-      <div class="project-list">
-        <article class="project project-left">
-          <a class="project-visual visual-cloud reveal" href="my-projects/cloudpilot/index.html" target="_blank" rel="noopener" data-i18n-aria="cloudAria" aria-label="Open CloudPilot live preview">
-            <div class="browser"><div class="browser-bar"><div><i></i><i></i><i></i></div><span>cloudpilot.io</span><b><i class="fa-solid fa-arrow-up-right-from-square"></i></b></div><div class="browser-view"><iframe src="my-projects/cloudpilot/index.html" title="CloudPilot website preview" tabindex="-1"></iframe></div></div>
-            <div class="project-open"><span data-i18n="viewLive">View live project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </a>
-          <div class="project-copy reveal">
-            <div class="project-meta"><span>01</span><span data-i18n="cloudCategory">SaaS Landing Page</span></div>
-            <h3>CloudPilot</h3>
-            <p data-i18n="cloudDescription">Modern SaaS website with dashboard previews and conversion-focused sections.</p>
-            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link ripple" href="my-projects/cloudpilot/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
+        <div class="exhibition-list">
+          <article class="exhibit exhibit-cloud reveal">
+            <div class="exhibit-number" aria-hidden="true">01</div>
+            <div class="exhibit-visual">
+              <div class="visual-halo"></div><span class="visual-label">SaaS / 2026</span>
+              <a class="browser-frame" href="my-projects/cloudpilot/index.html" target="_blank" rel="noopener" data-i18n-aria="cloudAria" aria-label="Open CloudPilot live preview">
+                <div class="browser-bar"><div><i></i><i></i><i></i></div><span>cloudpilot.io</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="browser-view"><iframe src="my-projects/cloudpilot/index.html" title="CloudPilot website preview" tabindex="-1"></iframe></div>
+              </a>
+            </div>
+            <div class="exhibit-copy">
+              <div class="project-category"><span></span><span data-i18n="cloudCategory">SaaS Landing Page</span></div><h3>CloudPilot</h3><p data-i18n="cloudDescription">Modern SaaS website with dashboard previews and conversion-focused sections.</p>
+              <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="project-link ripple" href="my-projects/cloudpilot/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
 
-        <article class="project project-right">
-          <div class="project-copy reveal">
-            <div class="project-meta"><span>02</span><span data-i18n="novaCategory">Creative Agency Website</span></div>
-            <h3>Nova Agency</h3>
-            <p data-i18n="novaDescription">Bold creative studio experience with premium dark visuals.</p>
-            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link ripple" href="my-projects/nova-agency/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-          <a class="project-visual visual-nova reveal" href="my-projects/nova-agency/index.html" target="_blank" rel="noopener" data-i18n-aria="novaAria" aria-label="Open Nova Agency live preview">
-            <div class="browser"><div class="browser-bar"><div><i></i><i></i><i></i></div><span>nova-agency.com</span><b><i class="fa-solid fa-arrow-up-right-from-square"></i></b></div><div class="browser-view"><iframe loading="lazy" src="my-projects/nova-agency/index.html" title="Nova Agency website preview" tabindex="-1"></iframe></div></div>
-            <div class="project-open"><span data-i18n="viewLive">View live project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </a>
-        </article>
+          <article class="exhibit exhibit-nova reveal">
+            <div class="exhibit-number" aria-hidden="true">02</div>
+            <div class="exhibit-visual">
+              <div class="visual-halo"></div><span class="visual-label">CREATIVE / 2026</span>
+              <a class="browser-frame" href="my-projects/nova-agency/index.html" target="_blank" rel="noopener" data-i18n-aria="novaAria" aria-label="Open Nova Agency live preview">
+                <div class="browser-bar"><div><i></i><i></i><i></i></div><span>nova-agency.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="browser-view"><iframe loading="lazy" src="my-projects/nova-agency/index.html" title="Nova Agency website preview" tabindex="-1"></iframe></div>
+              </a>
+            </div>
+            <div class="exhibit-copy">
+              <div class="project-category"><span></span><span data-i18n="novaCategory">Creative Agency Website</span></div><h3>Nova Agency</h3><p data-i18n="novaDescription">Bold creative studio experience with premium dark visuals.</p>
+              <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="project-link ripple" href="my-projects/nova-agency/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
 
-        <article class="project project-left">
-          <a class="project-visual visual-ruya reveal" href="my-projects/dar-al-ruya/index.html" target="_blank" rel="noopener" data-i18n-aria="ruyaAria" aria-label="Open Dar Al Ruya live preview">
-            <div class="browser"><div class="browser-bar"><div><i></i><i></i><i></i></div><span>dar-al-ruya.com</span><b><i class="fa-solid fa-arrow-up-right-from-square"></i></b></div><div class="browser-view"><iframe loading="lazy" src="my-projects/dar-al-ruya/index.html" title="Dar Al Ruya website preview" tabindex="-1"></iframe></div></div>
-            <div class="project-open"><span data-i18n="viewLive">View live project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </a>
-          <div class="project-copy reveal">
-            <div class="project-meta"><span>03</span><span data-i18n="ruyaCategory">Arabic Corporate Website</span></div>
-            <h3 data-i18n="ruyaTitle">Dar Al Ruya</h3>
-            <p data-i18n="ruyaDescription">Arabic RTL corporate website designed for Gulf businesses.</p>
-            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link ripple" href="my-projects/dar-al-ruya/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </article>
+          <article class="exhibit exhibit-ruya reveal">
+            <div class="exhibit-number" aria-hidden="true">03</div>
+            <div class="exhibit-visual">
+              <div class="visual-halo"></div><span class="visual-label">RTL / 2026</span>
+              <a class="browser-frame" href="my-projects/dar-al-ruya/index.html" target="_blank" rel="noopener" data-i18n-aria="ruyaAria" aria-label="Open Dar Al Ruya live preview">
+                <div class="browser-bar"><div><i></i><i></i><i></i></div><span>dar-al-ruya.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="browser-view"><iframe loading="lazy" src="my-projects/dar-al-ruya/index.html" title="Dar Al Ruya website preview" tabindex="-1"></iframe></div>
+              </a>
+            </div>
+            <div class="exhibit-copy">
+              <div class="project-category"><span></span><span data-i18n="ruyaCategory">Arabic Corporate Website</span></div><h3 data-i18n="ruyaTitle">Dar Al Ruya</h3><p data-i18n="ruyaDescription">Arabic RTL corporate website designed for Gulf businesses.</p>
+              <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="project-link ripple" href="my-projects/dar-al-ruya/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
 
-        <article class="project project-right">
-          <div class="project-copy reveal">
-            <div class="project-meta"><span>04</span><span data-i18n="joreemCategory">Luxury Ceramic &amp; Marble Brand</span></div>
-            <h3>JOREEM</h3>
-            <p data-i18n="joreemDescription">Premium Arabic showroom experience for ceramic, porcelain, and marble products.</p>
-            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link ripple" href="my-projects/joreem/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-          <a class="project-visual visual-joreem reveal" href="my-projects/joreem/index.html" target="_blank" rel="noopener" data-i18n-aria="joreemAria" aria-label="Open JOREEM live preview">
-            <div class="browser"><div class="browser-bar"><div><i></i><i></i><i></i></div><span>joreem.com</span><b><i class="fa-solid fa-arrow-up-right-from-square"></i></b></div><div class="browser-view"><iframe loading="lazy" src="my-projects/joreem/index.html" title="JOREEM website preview" tabindex="-1"></iframe></div></div>
-            <div class="project-open"><span data-i18n="viewLive">View live project</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-          </a>
-        </article>
+          <article class="exhibit exhibit-joreem reveal">
+            <div class="exhibit-number" aria-hidden="true">04</div>
+            <div class="exhibit-visual">
+              <div class="visual-halo"></div><span class="visual-label">LUXURY / 2026</span>
+              <a class="browser-frame" href="my-projects/joreem/index.html" target="_blank" rel="noopener" data-i18n-aria="joreemAria" aria-label="Open JOREEM live preview">
+                <div class="browser-bar"><div><i></i><i></i><i></i></div><span>joreem.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="browser-view"><iframe loading="lazy" src="my-projects/joreem/index.html" title="JOREEM website preview" tabindex="-1"></iframe></div>
+              </a>
+            </div>
+            <div class="exhibit-copy">
+              <div class="project-category"><span></span><span data-i18n="joreemCategory">Luxury Ceramic &amp; Marble Brand</span></div><h3>JOREEM</h3><p data-i18n="joreemDescription">Premium Arabic showroom experience for ceramic, porcelain, and marble products.</p>
+              <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="project-link ripple" href="my-projects/joreem/index.html" target="_blank" rel="noopener"><span data-i18n="livePreview">Live Preview</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="services section" id="services">
       <div class="shell">
-        <div class="section-label reveal" data-i18n="capabilitiesLabel">02 / Capabilities</div>
-        <div class="services-layout">
-          <h2 class="reveal" data-i18n="servicesTitle">What I Build</h2>
-          <div class="services-list">
-            <div class="service reveal"><i class="fa-solid fa-rocket"></i><span data-i18n="serviceLanding">Landing Pages</span><b>01</b></div>
-            <div class="service reveal"><i class="fa-regular fa-building"></i><span data-i18n="serviceBusiness">Business Websites</span><b>02</b></div>
-            <div class="service reveal"><i class="fa-solid fa-language"></i><span data-i18n="serviceArabic">Arabic RTL Websites</span><b>03</b></div>
-            <div class="service reveal"><i class="fa-solid fa-city"></i><span data-i18n="serviceCorporate">Corporate Websites</span><b>04</b></div>
-            <div class="service reveal"><i class="fa-solid fa-user-tie"></i><span data-i18n="servicePortfolio">Portfolio Websites</span><b>05</b></div>
-          </div>
+        <div class="section-heading services-heading"><div><div class="section-label reveal" data-i18n="capabilitiesLabel">02 / Capabilities</div><h2 class="reveal" data-i18n="servicesTitle">What I Build</h2></div></div>
+        <div class="service-cloud">
+          <div class="service-pill reveal"><i class="fa-solid fa-rocket"></i><span data-i18n="serviceLanding">Landing Pages</span><small>01</small></div>
+          <div class="service-pill reveal delay-1"><i class="fa-regular fa-building"></i><span data-i18n="serviceBusiness">Business Websites</span><small>02</small></div>
+          <div class="service-pill reveal delay-2"><i class="fa-solid fa-language"></i><span data-i18n="serviceArabic">Arabic RTL Websites</span><small>03</small></div>
+          <div class="service-pill reveal"><i class="fa-solid fa-city"></i><span data-i18n="serviceCorporate">Corporate Websites</span><small>04</small></div>
+          <div class="service-pill reveal delay-1"><i class="fa-solid fa-user-tie"></i><span data-i18n="servicePortfolio">Portfolio Websites</span><small>05</small></div>
+          <div class="service-pill reveal delay-2"><i class="fa-solid fa-wand-magic-sparkles"></i><span data-i18n="serviceInterfaces">Custom Web Interfaces</span><small>06</small></div>
         </div>
       </div>
     </section>
 
-    <section class="stats" data-i18n-aria="statsAria" aria-label="Project statistics">
-      <div class="shell stats-grid">
-        <div class="stat reveal"><strong>4</strong><span data-i18n="statProjects">Projects Built</span></div>
-        <div class="stat reveal delay-1"><strong>100%</strong><span data-i18n="statResponsive">Responsive</span></div>
-        <div class="stat reveal delay-2"><strong>AR / EN</strong><span data-i18n="statLanguages">Arabic &amp; English</span></div>
-        <div class="stat reveal delay-3"><strong>&lt;/&gt;</strong><span>HTML CSS JavaScript</span></div>
+    <section class="trust-strip" aria-label="Why work with me">
+      <div class="trust-track">
+        <div><i class="fa-solid fa-mobile-screen-button"></i><span data-i18n="trustResponsive">Responsive Design</span></div><b></b>
+        <div><i class="fa-solid fa-code"></i><span data-i18n="trustCode">Clean Code</span></div><b></b>
+        <div><i class="fa-solid fa-bolt"></i><span data-i18n="trustFast">Fast Loading</span></div><b></b>
+        <div><i class="fa-regular fa-comments"></i><span data-i18n="trustCommunication">Clear Communication</span></div><b></b>
+        <div><i class="fa-solid fa-language"></i><span data-i18n="trustLanguages">Arabic &amp; English</span></div><b></b>
+        <div><i class="fa-solid fa-chart-line"></i><span data-i18n="trustBusiness">Business Focused</span></div>
       </div>
     </section>
 
     <section class="contact section" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
       <div class="shell contact-grid">
         <div class="contact-copy">
           <div class="section-label reveal" data-i18n="contactLabel">03 / Contact</div>
           <h2 class="reveal" data-i18n="contactTitle">Ready to Build Something That Stands Out?</h2>
           <p class="contact-intro reveal" data-i18n="contactIntro">Tell me about your business and what you want to create. I’ll help turn your idea into a polished website that builds trust from the first visit.</p>
           <div class="direct-links reveal">
-            <a href="mailto:ahmaadzaid7@gmail.com"><i class="fa-regular fa-envelope"></i><span><small data-i18n="emailLabel">Email</small>ahmaadzaid7@gmail.com</span></a>
-            <a href="https://www.linkedin.com/in/ahmadalharbi" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i><span><small>LinkedIn</small><span data-i18n="connectLinkedIn">Connect on LinkedIn</span></span></a>
-            <a href="https://github.com/ahmadalharbi" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span><small>GitHub</small><span data-i18n="viewGithub">View my GitHub</span></span></a>
+            <a href="mailto:ahmaadzaid7@gmail.com"><i class="fa-regular fa-envelope"></i><span><small data-i18n="emailLabel">Email</small>ahmaadzaid7@gmail.com</span><i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i></a>
+            <a href="https://www.linkedin.com/in/ahmadalharbi" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i><span><small>LinkedIn</small><span data-i18n="connectLinkedIn">Connect on LinkedIn</span></span><i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i></a>
+            <a href="https://github.com/ahmadalharbi" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span><small>GitHub</small><span data-i18n="viewGithub">View my GitHub</span></span><i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i></a>
           </div>
           <div class="availability reveal"><i></i><span data-i18n="availability">Available for selected freelance projects</span></div>
         </div>
 
         <div class="form-card reveal">
-          <div class="form-heading"><span data-i18n="formEyebrow">Project inquiry</span><i class="fa-regular fa-paper-plane"></i></div>
-          <form class="w-full flex flex-col lg:mt-16 contact-form" action="https://formsubmit.co/ahmaadzaid7@gmail.com" method="post">
-            <input type="hidden" name="_subject" value="New portfolio message from Ahmad website">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
+          <div class="form-heading"><div><small data-i18n="formNumber">INQUIRY / 01</small><span data-i18n="formEyebrow">Project inquiry</span></div><i class="fa-regular fa-paper-plane"></i></div>
+          <form class="contact-form" action="https://formsubmit.co/ahmaadzaid7@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New portfolio message from Ahmad website"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
             <div class="form-row">
               <label><span data-i18n="fieldName">Name</span><input type="text" name="name" required data-i18n-placeholder="namePlaceholder" placeholder="Your name" autocomplete="name"></label>
               <label><span data-i18n="fieldEmail">Email</span><input type="email" name="email" required data-i18n-placeholder="emailPlaceholder" placeholder="you@company.com" autocomplete="email"></label>
@@ -174,11 +201,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div><a class="logo" href="#home">AHMAD<span>.</span></a><small data-i18n="footerName">Ahmad Alharbi</small></div>
-      <div class="footer-links"><a href="mailto:ahmaadzaid7@gmail.com" data-i18n="emailLabel">Email</a><a href="https://www.linkedin.com/in/ahmadalharbi" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ahmadalharbi" target="_blank" rel="noreferrer">GitHub</a></div>
-      <span>&copy; <span id="year"></span> <span data-i18n="rights">All rights reserved</span></span>
-    </div>
+    <div class="shell footer-inner"><div class="footer-brand"><a class="logo" href="#home">AHMAD<span>.</span></a><small data-i18n="footerName">Ahmad Alharbi</small></div><div class="footer-links"><a href="mailto:ahmaadzaid7@gmail.com" data-i18n="emailLabel">Email</a><a href="https://www.linkedin.com/in/ahmadalharbi" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ahmadalharbi" target="_blank" rel="noreferrer">GitHub</a></div><span>&copy; <span id="year"></span> <span data-i18n="rights">All rights reserved</span></span></div>
   </footer>
 
   <button class="back-top" type="button" data-i18n-aria="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
