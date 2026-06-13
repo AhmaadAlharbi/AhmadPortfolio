@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ahmadalharbi.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+  <url>
+    <loc>https://ahmadalharbi.com/my-projects/cloudpilot/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ahmadalharbi.com/my-projects/nova-agency/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ahmadalharbi.com/my-projects/dar-al-ruya/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ahmadalharbi.com/my-projects/joreem/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

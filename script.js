@@ -204,13 +204,15 @@ if (heroGallery && !reduceMotion.matches && window.matchMedia('(pointer: fine)')
   });
 }
 
-contactForm.addEventListener('submit', () => {
-  const submitButton = contactForm.querySelector('.form-submit');
-  submitButton.disabled = true;
-  submitButton.querySelector('span').textContent = translations[currentLanguage].sendingMessage;
-  formNote.classList.add('success');
-  formNote.querySelector('span').textContent = translations[currentLanguage].formSending;
-});
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    const submitButton = contactForm.querySelector('.form-submit');
+    submitButton.disabled = true;
+    submitButton.querySelector('span').textContent = translations[currentLanguage].sendingMessage;
+    formNote.classList.add('success');
+    formNote.querySelector('span').textContent = translations[currentLanguage].formSending;
+  });
+}
 
 backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion.matches ? 'auto' : 'smooth' }));
 document.querySelector('#year').textContent = new Date().getFullYear();
